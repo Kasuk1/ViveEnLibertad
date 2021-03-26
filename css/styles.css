@@ -1,0 +1,352 @@
+h1 {
+  font-family: 'Lobster Two', cursive;
+}
+
+p {
+  font-family: 'Manrope', sans-serif;
+  font-size: 36px;
+}
+
+/*HEADER*/
+.header {
+  background: url("../images/banner-cielo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 750px;
+}
+
+.banner-nube {
+  width: 900px;
+  position: relative;
+  bottom: 100px;
+  left: 80px;
+}
+
+.banner-frase {
+  width: 700px;
+  position: relative;
+  margin: 90px;
+}
+
+.logo-blanco {
+  width: 120px;
+  position: relative;
+  top: 50px;
+  left: 330px;
+}
+
+/*CATEGORIAS*/
+.categorias {
+  margin: 150px 0;
+}
+
+.categorias h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 150px;
+  color: #395572;
+}
+
+.lista-categorias {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding: 0;
+  border-left: groove;
+  border-color: #395572;
+}
+
+.categoria-item {
+  font-family: bebas-kai, sans-serif;
+  font-size: 25px;
+  text-align: center;
+  color: #395572;
+  list-style: none;
+  width: 100%;
+  height: 119px;
+  margin: 0 1px;
+}
+
+.icon-categoria {
+  color: #395572;
+  font-size: 35px;
+  margin: 25px 0 20px 0;
+  width: 100%;
+}
+
+#carousel1 .carousel-item {
+  height: 600px;
+}
+
+#carousel1 .carousel-caption {
+  background-color: #122938;
+  opacity: 0.7;
+  height: 450px;
+  width: 300px;
+  margin-bottom: 60px;
+  text-align: left;
+  line-height: 1.8;
+  padding: 0;
+}
+
+#carousel1 .carousel-caption h5 {
+  font-family: bebas-kai, sans-serif;
+  font-size: 2.8rem;
+  margin: 40px 25px;
+  letter-spacing: 5px;
+}
+
+#carousel1 .carousel-caption p {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.2rem;
+  margin: 40px 25px;
+}
+
+/*ARTICULOS-PRINCIPAL*/
+.articulo1 {
+  background-color: #395572;
+  padding: 0;
+  height: 1200px;
+}
+.articulo1-title {
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  padding-bottom: 100px;
+  color: #ffff;
+  font-size: 2.8rem;
+  padding-top: 120px;
+}
+
+.articulo1-texto{
+  color: #ffff;
+  width: 100%;
+  position: relative;
+  top: 100px;
+  right: 40px;
+  line-height: 2;
+}
+
+.articulo1-texto h2 {
+  font-family: bebas-kai, sans-serif;
+  font-size: 3.5rem;
+  letter-spacing: 5px;
+}
+
+.articulo1-texto p {
+  font-size: 1.5rem;
+  margin-top: 50px;
+}
+
+.articulo1-imagen {
+  position: relative;
+  width: 100%;
+  left: 50px;
+}
+
+/*LUGARES-PRINCIPAL*/
+.lugar-favorito-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.8rem;
+  text-align: center;
+  margin: 150px 0;
+  color: #395572;
+}
+
+.lugar-favorito {
+  height: 800px;
+}
+
+#carousel2 img {
+  width: 620px;
+  position: relative;
+  right: 10px;
+  top: 40px;
+}
+
+#carousel2 .carousel-caption {
+  position: relative;
+  left: 750px;
+  bottom: 330px;
+  color: #395572;
+  width: 520px;
+  text-align: left;
+  line-height: 2;
+}
+
+#carousel2 .carousel-caption h5 {
+  font-family: bebas-kai, sans-serif;
+  font-size: 3.5rem;
+  color: #ffff;
+  background-color: #395572;
+  letter-spacing: 2px;
+}
+
+#carousel2 .carousel-caption p {
+  font-size: 1.5rem;
+  margin-top: 50px;
+}
+
+#carousel2 .carousel-control-prev {
+  visibility: hidden;
+}
+
+#carousel2 .carousel-control-next {
+  visibility: hidden;
+}
+
+/*CONTACTO*/
+
+
+
+/*FOOTER*/
+.footer {
+  background-color: #373345;
+  height: 400px;
+}
+
+.logo-footer {
+  width: 300px;
+  position: relative;
+  top: 100px;
+  right: 50px;
+}
+
+.list-footer {
+  position: relative;
+  top: 100px;
+  left: 20px;
+  padding: 0;
+  line-height: 3;
+  color: #ffff;
+  height: 100%;
+}
+
+.list-footer h4 {
+  font-size: 1rem;
+}
+
+.list-footer ul {
+  font-size: 0.8rem;
+  list-style: none;
+  padding-left: 0;
+}
+
+
+@media (max-width: 1024px) {
+  .header {
+    height: 850px;
+  }
+
+  .banner-frase {
+    position: absolute;
+    top: 310px;
+    left: 220px;
+    width: 500px;
+    margin: 0;
+  }
+
+  .banner-nube {
+    width: 850px;
+    margin: 100px 0 0;
+  }
+
+  .logo-blanco {
+    width: 100px;
+    left: 100px;
+  }
+
+  .lista-categorias {
+    margin: 0 30px;
+    border: none;
+  }
+
+  .carousel-item {
+    height: 430px;
+  }
+
+  .categoria-item {
+    font-size: 20px;
+    width: 310px;
+    height: 150px;
+    border-bottom: groove;
+    border-radius: 5px;
+  }
+
+  .icon-categoria {
+    font-size: 50px;
+    margin: 35px 0 20px 0;
+    width: 100%;
+  }
+
+  #carousel1 .carousel-caption {
+    margin-bottom: 150px;
+    height: 200px;
+    width: 500px;
+  }
+
+  #carousel1 .carousel-caption h5 {
+    font-family: bebas-kai, sans-serif;
+    font-size: 1.5rem;
+    margin: 20px;
+  }
+
+  #carousel1 .carousel-caption p {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1rem;
+  }
+
+  .articulo1 {
+    height: 1300px;
+  }
+
+  .articulo1-title {
+    padding: 150px 0 50px 0;
+  }
+
+  .articulo1-texto {
+  }
+
+  .articulo1-imagen {
+    margin: 100px 20px 30px 0;
+  }
+
+  .lugar-favorito {
+    height: 1000px;
+  }
+
+  #carousel2 .carousel-item {
+    height: 1000px;
+  }
+
+  #carousel2 img {
+    width: 100%;
+  }
+
+  #carousel2 .carousel-caption {
+    left: 1px;
+    top: 30px;
+    color: #395572;
+    width: 100%;
+    text-align: left;
+    line-height: 2;
+  }
+
+  .footer {
+    background-color: #373345;
+    height: 1100px;
+  }
+
+  .logo-footer {
+    width: 200px;
+    left: 270px;
+    margin: 50px 0 100px 0;
+  }
+
+  .list-footer {
+    text-align: center;
+  }
+
+}
