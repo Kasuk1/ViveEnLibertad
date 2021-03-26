@@ -14,27 +14,22 @@ p {
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 750px;
 }
 
 .banner-nube {
-  width: 900px;
-  position: relative;
-  bottom: 100px;
-  left: 80px;
+  width: 100%;
+  margin: 0 0 100px 80px;
+
 }
 
 .banner-frase {
-  width: 700px;
-  position: relative;
-  margin: 90px;
+  width: 80%;
+  margin: 150px 0 0 40px;
 }
 
 .logo-blanco {
-  width: 120px;
-  position: relative;
-  top: 50px;
-  left: 330px;
+  width: 15%;
+  margin: 20px 0 0 220px;
 }
 
 /*CATEGORIAS*/
@@ -237,25 +232,27 @@ p {
 
 @media (max-width: 1024px) {
   .header {
-    height: 850px;
+    height: 1000px;
   }
 
   .banner-frase {
     position: absolute;
-    top: 310px;
-    left: 220px;
-    width: 500px;
-    margin: 0;
+    top: 210px;
+    left: 205px;
+    width: 50%;
   }
 
   .banner-nube {
-    width: 850px;
-    margin: 100px 0 0;
+    width: 100%;
+    position: relative;
+    left: 20px;
+    bottom: 70px;
+    margin: 0;
   }
 
   .logo-blanco {
-    width: 100px;
-    left: 100px;
+    width: 20%;
+    margin-left: 400px;
   }
 
   .lista-categorias {
