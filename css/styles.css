@@ -1,10 +1,14 @@
-h1 {
-  font-family: 'Lobster Two', cursive;
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: bebas-kai, sans-serif;
 }
 
 p {
   font-family: 'Manrope', sans-serif;
-  font-size: 36px;
 }
 
 /*HEADER*/
@@ -17,19 +21,22 @@ p {
 }
 
 .banner-nube {
-  width: 100%;
-  margin: 0 0 100px 80px;
-
+  position: relative;
+  width: 90%;
+  bottom: 50px;
+  left: 370px;
 }
 
 .banner-frase {
-  width: 80%;
-  margin: 150px 0 0 40px;
+  position: relative;
+  width: 63%;
+  left: 200px;
+  top: 85px;
 }
 
 .logo-blanco {
-  width: 15%;
-  margin: 20px 0 0 220px;
+  width: 13%;
+  margin: 20px 50px;
 }
 
 /*CATEGORIAS*/
@@ -37,12 +44,11 @@ p {
   margin: 150px 0;
 }
 
-.categorias h1 {
-  font-family: 'Dancing Script', cursive;
+.categoria-title {
   font-size: 4rem;
   text-align: center;
   margin-bottom: 150px;
-  color: #395572;
+  color: #4B4F52;
 }
 
 .lista-categorias {
@@ -51,14 +57,14 @@ p {
   align-content: flex-start;
   padding: 0;
   border-left: groove;
-  border-color: #395572;
+  border-color: #4B4F52;
 }
 
 .categoria-item {
   font-family: bebas-kai, sans-serif;
   font-size: 25px;
   text-align: center;
-  color: #395572;
+  color: #4B4F52;
   list-style: none;
   width: 100%;
   height: 119px;
@@ -66,7 +72,7 @@ p {
 }
 
 .icon-categoria {
-  color: #395572;
+  color: #4B4F52;
   font-size: 35px;
   margin: 25px 0 20px 0;
   width: 100%;
@@ -77,77 +83,70 @@ p {
 }
 
 #carousel1 .carousel-caption {
-  background-color: #122938;
-  opacity: 0.7;
+  background-color: #686E73;
+  opacity: 0.75;
   height: 450px;
   width: 300px;
   margin-bottom: 60px;
   text-align: left;
   line-height: 1.8;
   padding: 0;
+  color: #ffff;
 }
 
 #carousel1 .carousel-caption h5 {
-  font-family: bebas-kai, sans-serif;
   font-size: 2.8rem;
   margin: 40px 25px;
   letter-spacing: 5px;
 }
 
 #carousel1 .carousel-caption p {
-  font-family: 'Manrope', sans-serif;
   font-size: 1.2rem;
   margin: 40px 25px;
 }
 
 /*ARTICULOS-PRINCIPAL*/
 .articulo1 {
-  background-color: #395572;
-  padding: 0;
-  height: 1200px;
+  background-color: #D9A64B;
+  height: 1100px;
 }
+
 .articulo1-title {
-  font-family: 'Dancing Script', cursive;
   text-align: center;
   padding-bottom: 100px;
   color: #ffff;
-  font-size: 2.8rem;
+  font-size: 4rem;
   padding-top: 120px;
 }
 
 .articulo1-texto{
   color: #ffff;
-  width: 100%;
-  position: relative;
-  top: 100px;
-  right: 40px;
   line-height: 2;
+  padding-top: 140px;
 }
 
-.articulo1-texto h2 {
-  font-family: bebas-kai, sans-serif;
-  font-size: 3.5rem;
+.articulo1-subtitle {
+  font-size: 2.8rem;
   letter-spacing: 5px;
 }
 
-.articulo1-texto p {
-  font-size: 1.5rem;
+.articulo1-p {
+  font-size: 1.4rem;
   margin-top: 50px;
 }
 
 .articulo1-imagen {
   position: relative;
-  width: 100%;
-  left: 50px;
+  width: 90%;
+  left: 100px;
 }
 
 /*LUGARES-PRINCIPAL*/
 .lugar-favorito-title {
-  font-family: 'Dancing Script', cursive;
-  font-size: 2.8rem;
+  font-size: 4rem;
   text-align: center;
   margin: 150px 0;
-  color: #395572;
+  color: #B55352;
 }
 
 .lugar-favorito {
@@ -161,10 +160,14 @@ p {
   top: 40px;
 }
 
+#carousel2 .carousel-item {
+  height: 520px;
+}
+
 #carousel2 .carousel-caption {
   position: relative;
-  left: 750px;
-  bottom: 330px;
+  left: 650px;
+  bottom: 390px;
   color: #395572;
   width: 520px;
   text-align: left;
@@ -175,13 +178,14 @@ p {
   font-family: bebas-kai, sans-serif;
   font-size: 3.5rem;
   color: #ffff;
-  background-color: #395572;
+  background-color: #B55352;
   letter-spacing: 2px;
 }
 
 #carousel2 .carousel-caption p {
   font-size: 1.5rem;
   margin-top: 50px;
+  color: #4B4F52;
 }
 
 #carousel2 .carousel-control-prev {
@@ -198,7 +202,7 @@ p {
 
 /*FOOTER*/
 .footer {
-  background-color: #373345;
+  background-color: #4B4F52;
   height: 400px;
 }
 
@@ -216,11 +220,10 @@ p {
   padding: 0;
   line-height: 3;
   color: #ffff;
-  height: 100%;
 }
 
 .list-footer h4 {
-  font-size: 1rem;
+  font-size: 1.7rem;
 }
 
 .list-footer ul {
@@ -229,6 +232,21 @@ p {
   padding-left: 0;
 }
 
+.copyright {
+  color: #ffff;
+  position: relative;
+  text-align: center;
+  top: 130px;
+  font-size: 0.7rem;
+}
+
+/*TRYING RESPONSIVE*/
+@media (max-width: 1200px) {
+  .banner-frase {
+    width: 45%;
+    left: 250px;
+  }
+}
 
 @media (max-width: 1024px) {
   .header {
@@ -237,16 +255,16 @@ p {
 
   .banner-frase {
     position: absolute;
-    top: 210px;
-    left: 205px;
+    top: 380px;
+    left: 245px;
     width: 50%;
   }
 
   .banner-nube {
+    position: absolute;
     width: 100%;
-    position: relative;
-    left: 20px;
-    bottom: 70px;
+    left: 10px;
+    top: 70px;
     margin: 0;
   }
 
@@ -299,11 +317,9 @@ p {
     height: 1300px;
   }
 
-  .articulo1-title {
-    padding: 150px 0 50px 0;
-  }
-
   .articulo1-texto {
+    text-align: center;
+    padding-top: 0;
   }
 
   .articulo1-imagen {
@@ -332,14 +348,13 @@ p {
   }
 
   .footer {
-    background-color: #373345;
-    height: 1100px;
+    height: 900px;
   }
 
   .logo-footer {
     width: 200px;
     left: 270px;
-    margin: 50px 0 100px 0;
+    top: 50px;
   }
 
   .list-footer {
