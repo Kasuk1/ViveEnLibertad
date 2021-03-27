@@ -1,6 +1,7 @@
-body {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 h1, h2, h3, h4, h5 {
@@ -58,6 +59,7 @@ p {
   padding: 0;
   border-left: groove;
   border-color: #4B4F52;
+  margin: 0;
 }
 
 .categoria-item {
@@ -71,11 +73,24 @@ p {
   margin: 0 1px;
 }
 
+.link-categoria {
+  text-decoration: none;
+  color: #4B4F52;
+}
+
+.link-categoria:hover {
+  color: #618FC3;
+}
+
 .icon-categoria {
   color: #4B4F52;
   font-size: 35px;
   margin: 25px 0 20px 0;
   width: 100%;
+}
+
+.icon-categoria:hover {
+  color: #618FC3;
 }
 
 #carousel1 .carousel-item {
