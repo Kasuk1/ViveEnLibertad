@@ -122,3 +122,43 @@ p{
 .second .section-text, .fourth .section-text {
   text-align: right;
 }
+
+/*FOOTER*/
+.footer {
+  background-color: #4B4F52;
+  height: 400px;
+}
+
+.logo-footer {
+  width: 300px;
+  position: relative;
+  top: 100px;
+  right: 50px;
+}
+
+.list-footer {
+  position: relative;
+  top: 100px;
+  left: 20px;
+  padding: 0;
+  line-height: 3;
+  color: #ffff;
+}
+
+.list-footer h4 {
+  font-size: 1.7rem;
+}
+
+.list-footer ul {
+  font-size: 0.8rem;
+  list-style: none;
+  padding-left: 0;
+}
+
+.copyright {
+  color: #ffff;
+  position: relative;
+  text-align: center;
+  top: 130px;
+  font-size: 0.7rem;
+}
