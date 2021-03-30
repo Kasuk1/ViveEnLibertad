@@ -262,11 +262,6 @@ p {
     margin-left: 400px;
   }
 
-  .logo-footer {
-    margin: 0;
-    width: 300px;
-  }
-
   .categories {
     height: 1200px;
     justify-content: space-evenly;
@@ -299,6 +294,11 @@ p {
 
   .categ-icon {
     flex-direction: column;
+  }
+
+  .logo-footer {
+    margin: 0;
+    width: 300px;
   }
 
   .list-footer {
