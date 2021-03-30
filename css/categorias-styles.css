@@ -315,6 +315,15 @@ p {
   padding: 0;
 }
 
+.list-footer a {
+  text-decoration: none;
+  color: #ffff;
+}
+
+.list-footer a:hover {
+  color: #6699cc;
+}
+
 .copyright {
   color: #ffff;
   border-top: 1px solid #ffff;
