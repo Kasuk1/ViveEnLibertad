@@ -1,3 +1,20 @@
+<?php
+
+$servername = "localhost";
+$username = "viveenlibertad_igor_admin";
+$password = "AM0NfcWpOuBR";
+$dbname = "viveenlibertad_main_db";
+
+$conexion = mysqli_connect($servername, $username, $password, $dbname);
+
+if ($conexion) {
+  echo "<h1> Conexion exitosa</h1>";
+}else {
+  echo "<h1>No es posible conectar</h1>";
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -26,13 +43,12 @@
     </div>
     <div class="redes">
       <i class="fab fa-facebook-f"></i>
-      <i class="fab fa-twitter"></i>
       <i class="fab fa-instagram"></i>
     </div>
   </section>
 
   <section class="header">
-    <img class="logo-blanco" src="images/logo-blanco.png">
+    <a href="index.html"><img class="logo-blanco" src="images/logo-blanco.png"></a>
     <div class="row g-0">
       <div class="col-lg-6">
         <img src="images/banner-nube.png" class="banner-nube">
@@ -136,8 +152,8 @@
         <div class="list-footer">
           <h3>ENLACES DE INTERES</h3>
           <ul>
-            <a href="https://www.ytuqueplanes.com/"><li>Gercetur</li></a>
-            <a href="https://www.regionlalibertad.gob.pe/conoce"><li>¿Y tú que planes?</li></a>
+            <a href="https://www.regionlalibertad.gob.pe/conoce"><li>Gercetur</li></a>
+            <a href="https://www.ytuqueplanes.com/"><li>¿Y tú que planes?</li></a>
           </ul>
         </div>
         <div class="list-footer">

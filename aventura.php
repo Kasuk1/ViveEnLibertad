@@ -1,3 +1,7 @@
+<?php
+require("connect.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -33,7 +37,7 @@
     </section>
 
     <section class="header">
-      <img class="logo-blanco" src="images/logo-blanco.png">
+      <a href="index.php"><img class="logo-blanco" src="images/logo-blanco.png"></a>
       <div class="text-header">
         <h1>10 COSAS QUE HACER EN HUANCHACO</h1>
         <h3>UNO DE LOS BALNEARIOS MÁS FAMOSOS QUE TIENE LA ZONA NORTEÑA DEL PERÚ</h3>
@@ -45,25 +49,30 @@
 
     <section class="categories">
       <ul class="categ-icon">
-        <a href="urbano.html"><li><img src="images/urbano-white.png" />URBANO</li></a>
-        <a href="cultura.html"><li><img src="images/cultura-white.png" />CULTURA</li></a>
-        <a href="gastronomia.html"><li><img src="images/gastronomia-white.png" />GASTRONOMÍA</li></a>
-        <a class="active" href="aventura.html"><li><img src="images/aventura-white.png" />AVENTURA</li></a>
+        <a href="urbano.php"><li><img src="images/urbano-white.png" />URBANO</li></a>
+        <a href="cultura.php"><li><img src="images/cultura-white.png" />CULTURA</li></a>
+        <a href="gastronomia.php"><li><img src="images/gastronomia-white.png" />GASTRONOMÍA</li></a>
+        <a class="active" href="aventura.php"><li><img src="images/aventura-white.png" />AVENTURA</li></a>
       </ul>
     </section>
 
     <section class="articulos">
-      <div class="articulo art1">
-        <img src="images/vel1.jpg">
+      <?php
+        $query = "SELECT * FROM articulos WHERE id_categoria = 4";
+        $query_run = mysqli_query($conexion, $query);
+        $query_check = mysqli_num_rows($query_run);
+
+        if($query_check > 0) {
+          while($row = mysqli_fetch_assoc($query_run)) {
+      ?>
+
+      <div class="articulo">
+        <img src=" <?php echo $row['imagen'] ?> ">
         <div class="articulo-text">
-          <h1>VER EL SUNSET EN EL MUELLE</h1>
+          <h1> <?php echo $row['nombre_articulo'] ?> </h1>
           <h4>ETIQUETA 1, ETIQUETA 21, ETIQUETA 3</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
-          </p>
-          <button type="button" name="button">MORE INFO</button>
+          <p> <?php echo $row['descripcion'] ?> </p>
+          <button type="button" name="button">MAS INFO</button>
           <ul>
             <a href="#"><li><i class="fas fa-external-link-alt icon"></i>ABRIR EN GOOGLE MAPS</li></a>
             <a href="#"><li><i class="fas fa-map-marker-alt icon"></i>DIRECCIÓN</li></a>
@@ -71,85 +80,20 @@
           </ul>
         </div>
       </div>
-      <div class="articulo art2">
-        <img src="images/vel2.jpg">
-        <div class="articulo-text">
-          <h1>VER EL SUNSET EN EL MUELLE</h1>
-          <h4>ETIQUETA 1, ETIQUETA 21, ETIQUETA 3</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
-          </p>
-          <button type="button" name="button">MORE INFO</button>
-          <ul>
-            <a href="#"><li><i class="fas fa-external-link-alt icon"></i>ABRIR EN GOOGLE MAPS</li></a>
-            <a href="#"><li><i class="fas fa-map-marker-alt icon"></i>DIRECCIÓN</li></a>
-            <a href="#"><li><i class="far fa-calendar-alt icon"></i>HORARIO</li></a>
-          </ul>
-        </div>
-      </div>
-      <div class="articulo art3">
-        <img src="images/vel3.jpg">
-        <div class="articulo-text">
-          <h1>VER EL SUNSET EN EL MUELLE</h1>
-          <h4>ETIQUETA 1, ETIQUETA 21, ETIQUETA 3</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
-          </p>
-          <button type="button" name="button">MORE INFO</button>
-          <ul>
-            <a href="#"><li><i class="fas fa-external-link-alt icon"></i>ABRIR EN GOOGLE MAPS</li></a>
-            <a href="#"><li><i class="fas fa-map-marker-alt icon"></i>DIRECCIÓN</li></a>
-            <a href="#"><li><i class="far fa-calendar-alt icon"></i>HORARIO</li></a>
-          </ul>
-        </div>
-      </div>
-      <div class="articulo art4">
-        <img src="images/vel4.jpg">
-        <div class="articulo-text">
-          <h1>VER EL SUNSET EN EL MUELLE</h1>
-          <h4>ETIQUETA 1, ETIQUETA 21, ETIQUETA 3</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
-          </p>
-          <button type="button" name="button">MORE INFO</button>
-          <ul>
-            <a href="#"><li><i class="fas fa-external-link-alt icon"></i>ABRIR EN GOOGLE MAPS</li></a>
-            <a href="#"><li><i class="fas fa-map-marker-alt icon"></i>DIRECCIÓN</li></a>
-            <a href="#"><li><i class="far fa-calendar-alt icon"></i>HORARIO</li></a>
-          </ul>
-        </div>
-      </div>
-      <div class="articulo art5">
-        <img src="images/vel5.jpg">
-        <div class="articulo-text">
-          <h1>VER EL SUNSET EN EL MUELLE</h1>
-          <h4>ETIQUETA 1, ETIQUETA 21, ETIQUETA 3</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
-          </p>
-          <button type="button" name="button">MORE INFO</button>
-          <ul>
-            <a href="#"><li><i class="fas fa-external-link-alt icon"></i>ABRIR EN GOOGLE MAPS</li></a>
-            <a href="#"><li><i class="fas fa-map-marker-alt icon"></i>DIRECCIÓN</li></a>
-            <a href="#"><li><i class="far fa-calendar-alt icon"></i>HORARIO</li></a>
-          </ul>
-        </div>
-      </div>
-      <div class="articulo compartir">
-        <h4>COMPARTIR EN: </h4>
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-whatsapp"></i>
-      </div>
+
+      <?php
+          }
+        }
+      ?>
+
     </section>
+
+    <div class="compartir">
+      <h4>COMPARTIR EN: </h4>
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-whatsapp"></i>
+    </div>
 
     <section class="caja-comentario">
       <h1>DEJA UN COMENTARIO:</h1>
