@@ -1,0 +1,67 @@
+html,
+body {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: bebas-kai, sans-serif;
+}
+
+p {
+  font-family: 'Manrope', sans-serif;
+}
+
+.login-admin {
+  display: flex;
+}
+
+.imagen-admin {
+  width: 60%;
+}
+
+.imagen-admin img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.datos-admin {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.datos-admin img {
+  width: 35%;
+  margin: 10px 0;
+}
+
+.form-admin {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-admin input {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1rem;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 1px solid #000000;
+  text-align: center;
+}
+
+.form-admin button {
+  font-family: bebas-kai, sans-serif;
+  font-size: 1.3rem;
+  width: 180px;
+  align-self: center;
+  margin: 20px 0;
+  border-radius: 15px;
+  border: none;
+  background-color: #6699cc;
+  color: #ffff;
+}

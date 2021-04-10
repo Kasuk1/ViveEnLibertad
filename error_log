@@ -33,3 +33,143 @@
 [06-Apr-2021 20:57:29 America/New_York] PHP Parse error:  syntax error, unexpected end of file in /home/viveenlibertad/public_html/index.php on line 174
 [06-Apr-2021 20:59:35 America/New_York] PHP Parse error:  syntax error, unexpected end of file in /home/viveenlibertad/public_html/index.php on line 187
 [06-Apr-2021 21:00:12 America/New_York] PHP Parse error:  syntax error, unexpected end of file in /home/viveenlibertad/public_html/connect.php on line 28
+[08-Apr-2021 01:33:21 America/New_York] PHP Parse error:  syntax error, unexpected end of file in /home/viveenlibertad/public_html/cultura.php on line 188
+[08-Apr-2021 01:34:37 America/New_York] PHP Parse error:  syntax error, unexpected end of file in /home/viveenlibertad/public_html/cultura.php on line 189
+[08-Apr-2021 01:35:34 America/New_York] PHP Parse error:  syntax error, unexpected end of file in /home/viveenlibertad/public_html/cultura.php on line 123
+[08-Apr-2021 01:36:01 America/New_York] PHP Parse error:  syntax error, unexpected end of file in /home/viveenlibertad/public_html/cultura.php on line 123
+[08-Apr-2021 01:37:22 America/New_York] PHP Parse error:  syntax error, unexpected end of file in /home/viveenlibertad/public_html/cultura.php on line 123
+[08-Apr-2021 11:43:49 America/New_York] PHP Notice:  Undefined variable: conexion in /home/viveenlibertad/public_html/vista-articulo.php on line 63
+[08-Apr-2021 11:43:49 America/New_York] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/viveenlibertad/public_html/vista-articulo.php on line 63
+[08-Apr-2021 11:43:49 America/New_York] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/viveenlibertad/public_html/vista-articulo.php on line 64
+[08-Apr-2021 11:56:55 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli() in /home/viveenlibertad/public_html/vista-articulo.php:38
+Stack trace:
+#0 {main}
+  thrown in /home/viveenlibertad/public_html/vista-articulo.php on line 38
+[08-Apr-2021 11:57:20 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli() in /home/viveenlibertad/public_html/vista-articulo.php:38
+Stack trace:
+#0 {main}
+  thrown in /home/viveenlibertad/public_html/vista-articulo.php on line 38
+[08-Apr-2021 11:57:45 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli() in /home/viveenlibertad/public_html/vista-articulo.php:38
+Stack trace:
+#0 {main}
+  thrown in /home/viveenlibertad/public_html/vista-articulo.php on line 38
+[08-Apr-2021 11:57:51 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli() in /home/viveenlibertad/public_html/vista-articulo.php:38
+Stack trace:
+#0 {main}
+  thrown in /home/viveenlibertad/public_html/vista-articulo.php on line 38
+[08-Apr-2021 11:57:54 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli() in /home/viveenlibertad/public_html/vista-articulo.php:38
+Stack trace:
+#0 {main}
+  thrown in /home/viveenlibertad/public_html/vista-articulo.php on line 38
+[08-Apr-2021 12:02:05 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli() in /home/viveenlibertad/public_html/vista-articulo.php:38
+Stack trace:
+#0 {main}
+  thrown in /home/viveenlibertad/public_html/vista-articulo.php on line 38
+[08-Apr-2021 12:03:18 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli() in /home/viveenlibertad/public_html/vista-articulo.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/viveenlibertad/public_html/vista-articulo.php on line 40
+[08-Apr-2021 12:04:34 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli() in /home/viveenlibertad/public_html/vista-articulo.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/viveenlibertad/public_html/vista-articulo.php on line 46
+[08-Apr-2021 12:04:47 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli() in /home/viveenlibertad/public_html/vista-articulo.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/viveenlibertad/public_html/vista-articulo.php on line 46
+[08-Apr-2021 12:04:56 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli() in /home/viveenlibertad/public_html/vista-articulo.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/viveenlibertad/public_html/vista-articulo.php on line 46
+[08-Apr-2021 12:04:59 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli() in /home/viveenlibertad/public_html/vista-articulo.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/viveenlibertad/public_html/vista-articulo.php on line 46
+[08-Apr-2021 12:06:20 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli() in /home/viveenlibertad/public_html/vista-articulo.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/viveenlibertad/public_html/vista-articulo.php on line 46
+[08-Apr-2021 12:07:07 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli() in /home/viveenlibertad/public_html/vista-articulo.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/viveenlibertad/public_html/vista-articulo.php on line 46
+[08-Apr-2021 12:07:14 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli() in /home/viveenlibertad/public_html/vista-articulo.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/viveenlibertad/public_html/vista-articulo.php on line 46
+[08-Apr-2021 12:07:16 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli() in /home/viveenlibertad/public_html/vista-articulo.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/viveenlibertad/public_html/vista-articulo.php on line 46
+[08-Apr-2021 12:07:17 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli() in /home/viveenlibertad/public_html/vista-articulo.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/viveenlibertad/public_html/vista-articulo.php on line 46
+[08-Apr-2021 12:07:17 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli() in /home/viveenlibertad/public_html/vista-articulo.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/viveenlibertad/public_html/vista-articulo.php on line 46
+[08-Apr-2021 12:07:40 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli() in /home/viveenlibertad/public_html/vista-articulo.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/viveenlibertad/public_html/vista-articulo.php on line 46
+[08-Apr-2021 13:10:12 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli() in /home/viveenlibertad/public_html/vista-articulo.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/viveenlibertad/public_html/vista-articulo.php on line 46
+[08-Apr-2021 13:10:33 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli() in /home/viveenlibertad/public_html/vista-articulo.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/viveenlibertad/public_html/vista-articulo.php on line 46
+[08-Apr-2021 13:13:53 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli() in /home/viveenlibertad/public_html/vista-articulo.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/viveenlibertad/public_html/vista-articulo.php on line 46
+[08-Apr-2021 13:15:57 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli() in /home/viveenlibertad/public_html/vista-articulo.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/viveenlibertad/public_html/vista-articulo.php on line 46
+[08-Apr-2021 13:15:59 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli() in /home/viveenlibertad/public_html/vista-articulo.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/viveenlibertad/public_html/vista-articulo.php on line 46
+[08-Apr-2021 13:16:41 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli() in /home/viveenlibertad/public_html/vista-articulo.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/viveenlibertad/public_html/vista-articulo.php on line 46
+[08-Apr-2021 13:17:19 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli() in /home/viveenlibertad/public_html/vista-articulo.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/viveenlibertad/public_html/vista-articulo.php on line 46
+[08-Apr-2021 13:18:23 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli() in /home/viveenlibertad/public_html/vista-articulo.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/viveenlibertad/public_html/vista-articulo.php on line 46
+[08-Apr-2021 13:20:21 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli() in /home/viveenlibertad/public_html/vista-articulo.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/viveenlibertad/public_html/vista-articulo.php on line 46
+[08-Apr-2021 13:20:38 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli() in /home/viveenlibertad/public_html/vista-articulo.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/viveenlibertad/public_html/vista-articulo.php on line 46
+[08-Apr-2021 13:20:48 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli() in /home/viveenlibertad/public_html/vista-articulo.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/viveenlibertad/public_html/vista-articulo.php on line 46
+[08-Apr-2021 13:20:50 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli() in /home/viveenlibertad/public_html/vista-articulo.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/viveenlibertad/public_html/vista-articulo.php on line 46
+[08-Apr-2021 13:20:55 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli() in /home/viveenlibertad/public_html/vista-articulo.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/viveenlibertad/public_html/vista-articulo.php on line 46
+[08-Apr-2021 13:26:49 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli() in /home/viveenlibertad/public_html/vista-articulo.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/viveenlibertad/public_html/vista-articulo.php on line 46
+[08-Apr-2021 13:26:54 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysqli() in /home/viveenlibertad/public_html/vista-articulo.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/viveenlibertad/public_html/vista-articulo.php on line 46
