@@ -1,33 +1,39 @@
 <section class="footer">
-      <img src="images/logo-blanco.png" class="logo-footer">
-      <div class="list-footer">
-        <h3>BLOG</h3>
-        <ul>
-          <a href="/urbano.php"><li>Urbano</li></a>
-          <a href="/cultura.php"><li>Cultural</li></a>
-          <a href="/gastronomia.php"><li>Gastronomía</li></a>
-          <a href="/aventura.php"><li>Aventura</li></a>
-        </ul>
-      </div>
-      <div class="list-footer">
-        <h3>ENLACES DE INTERES</h3>
-        <ul>
-          <a href="https://www.regionlalibertad.gob.pe/conoce"><li>Gercetur</li></a>
-          <a href="https://www.ytuqueplanes.com/"><li>¿Y tú que planes?</li></a>
-        </ul>
-      </div>
-      <div class="list-footer">
-        <h3>REDES SOCIALES</h3>
-        <ul>
-          <a href="#"><li>Facebook</li></a>
-          <a href="#"><li>Instagram</li></a>
-        </ul>
+      <div class="logo-footer">
+        <img src="images/logo-blanco.png">
       </div>
 
-    <div class="copyright">
-      <p>© 2021 ViveEnLibertad Todos los derechos reservados</p>
-    </div>
+      <div class="list-footer-main">
+        <div class="list-footer">
+          <h3>BLOG</h3>
+          <ul>
+            <a href="/urbano.php"><li>Urbano</li></a>
+            <a href="/cultura.php"><li>Cultural</li></a>
+            <a href="/gastronomia.php"><li>Gastronomía</li></a>
+            <a href="/aventura.php"><li>Aventura</li></a>
+          </ul>
+        </div>
+        <div class="list-footer">
+          <h3>ENLACES DE INTERES</h3>
+          <ul>
+            <a href="https://www.regionlalibertad.gob.pe/conoce"><li>Gercetur</li></a>
+            <a href="https://www.ytuqueplanes.com/"><li>¿Y tú que planes?</li></a>
+          </ul>
+        </div>
+        <div class="list-footer">
+          <h3>REDES SOCIALES</h3>
+          <ul>
+            <a href="#"><li>Facebook</li></a>
+            <a href="#"><li>Instagram</li></a>
+          </ul>
+        </div>
+      </div>
+
 </section>
+
+<div class="copyright">
+  <p>© 2021 ViveEnLibertad Todos los derechos reservados</p>
+</div>
 
 <script src="js/app.js"></script>
 <script src="js/toggleInfo.js"></script>

@@ -177,6 +177,13 @@ p {
   color: #575757;
   width: 480px;
   padding: 30px;
+}
+
+.articulo-texto h1 {
+  font-size: 2rem;
+}
+
+.articulo-texto p {
   text-align: justify;
 }
 
@@ -208,23 +215,29 @@ p {
 .footer {
   background-color: #4B4F52;
   width: 100%;
-  height: 100%;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-content: space-evenly;
   align-items: flex-start;
   align-content: center;
 }
 
 .logo-footer {
-  width: 450px;
-  margin-right: 150px;
+  width: 25%;
+}
+
+.logo-footer img {
+  width: 100%;
+  margin: 30px;
+}
+
+.list-footer-main {
+  display: flex;
+  margin-top: 80px;
 }
 
 .list-footer {
   width: 250px;
   color: #ffff;
-  margin-top: 50px;
 }
 
 .list-footer ul {
@@ -244,11 +257,12 @@ p {
 }
 
 .copyright {
+  background-color: #4B4F52;
   color: #ffff;
   border-top: 1px solid #ffff;
   text-align: center;
   font-size: 1rem;
-  width: 1300px;
+  height: 50px;
 }
 
 .copyright p {
@@ -356,20 +370,36 @@ p {
     position: static;
   }
 
+  .footer {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
 
   .logo-footer {
     margin: 0;
     width: 300px;
   }
 
+  .logo-footer img {
+    margin: 0;
+  }
+
+  .list-footer-main {
+    flex-direction: column;
+    width: 40%;
+    justify-content: space-evenly;
+    margin-top: 0;
+  }
+
   .list-footer {
     width: 100%;
     text-align: center;
+    margin: 10px 0;
   }
 
-  .copyright {
-    margin-top: 50px;
-  }
 }
 
 /*********************************ARTICULOS SOLO******************************/
@@ -388,14 +418,15 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
-  align-items: center;
+  align-content: flex-start;
+  align-items: flex-start;
   margin: 5px;
 }
 
 .articulo2 img {
   width: 100%;
   height: 280px;
+  object-fit: cover;
 }
 
 .articulo2-text {
@@ -456,7 +487,8 @@ p {
   border-bottom: 1px solid #575757;
   display: flex;
   flex-flow: column;
-  justify-content: center flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: wrap;
   margin: 0 100px;
   padding: 50px;
 }
@@ -498,44 +530,6 @@ p {
   margin-top: 10px;
 }
 
-/*SLIDE-ARTICULOS*/
-.slide-articulos {
-  width: 100%;
-  height: 700px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 50px;
-}
-
-.box {
-  width: 350px;
-  height: 540px;
-  background-color: #f6f6f6;
-  margin: 50px 60px;
-}
-
-.box img {
-  width: 350px;
-  height: 250px;
-}
-
-.box-texto {
-  color: #575757;
-  padding: 20px;
-  text-align: justify;
-}
-
-.box-texto a {
-  font-family: bebas-kai, sans-serif;
-  background-color: #618fc3;
-  border: none;
-  border-radius: 20px;
-  width: 120px;
-  color: #ffff;
-  margin-left: 190px;
-}
-
 /*--responsive for mobile phone--*/
 @media(max-width:1024px) {
 
@@ -555,21 +549,6 @@ p {
     margin: 10px 0;
   }
 
-  /*SLIDE ARTÍCULOS*/
-  /*FOOTER*/
-  .logo-footer {
-    margin: 0;
-    width: 300px;
-  }
-
-  .list-footer {
-    width: 100%;
-    text-align: center;
-  }
-
-  .copyright {
-    margin-top: 50px;
-  }
 }
 
 
@@ -581,7 +560,7 @@ p {
 
 .vista-art-fondo {
   width: 100%;
-  height: 800px;
+  height: 950px;
   object-fit: cover;
 }
 
@@ -655,7 +634,7 @@ p {
 
 .descripcion-imagenes-button {
   font-family: bebas-kai, sans-serif;
-  font-size: 1.3rem;
+  font-size: 1rem;
   background-color: #ffff;
   width: 120px;
   height: 30px;
@@ -702,6 +681,53 @@ p {
   line-height: 2;
 }
 
+/*SLIDE-ARTICULOS*/
+.slide-articulos {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.box {
+  width: 350px;
+  height: 540px;
+  background-color: #f6f6f6;
+  margin: 50px 60px;
+}
+
+.box img {
+  width: 350px;
+  height: 250px;
+}
+
+.box-texto {
+  color: #575757;
+  padding: 20px;
+  text-align: justify;
+}
+
+.box-texto a {
+  font-family: bebas-kai, sans-serif;
+  background-color: #618fc3;
+  border: none;
+  border-radius: 20px;
+  width: 120px;
+  color: #ffff;
+  margin-left: 190px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.box-texto a:hover {
+  background-color: #ffff;
+  border: 1px solid #618fc3;
+  color: #618fc3;
+}
+
+
 @media(max-width:1024px) {
   .logo-blanco-vista {
     position: absolute;
@@ -718,9 +744,13 @@ p {
     align-content: center;
   }
 
-  .descripcion-articulo {
+  .descripcion-articulo2 {
     flex-direction: column-reverse;
     align-content: center;
+  }
+
+  .descripcion-texto {
+    margin-bottom: 20px;
   }
 
   .google_map {

@@ -76,23 +76,26 @@ require("connect.php");
 
       if($query_check > 0){
         while($row = mysqli_fetch_assoc($query_run)) {
+          if($row['desc_subtitulo1'] !== ""){
 
       ?>
     <div class="descripcion-imagenes">
-      <img class="imagen-descripcion" src="<?php echo $row['imagen'] ?>"></img>
-      <button class="descripcion-imagenes-button" type="button" name="button">MÁS INFO</button>
-      <ul class="mas-info">
-        <a href="<?php echo $row['google_maps'] ?>"><li><i class="fas fa-external-link-alt icon"></i>ABRIR EN GOOGLE MAPS</li></a>
-        <a href="#"><li><i class="fas fa-map-marker-alt icon"></i>DIRECCIÓN</li></a>
-        <a href="#"><li><i class="far fa-calendar-alt icon"></i>HORARIO</li></a>
-      </ul>
+      <img class="imagen-descripcion" src="<?php echo $row['imagen1'] ?>"></img>
+
     </div>
     <div class="descripcion-texto">
       <h2> <?php echo $row['desc_subtitulo1'] ?> </h2>
       <h4> <?php echo $row['etiqueta1'] ?> </h4>
       <p> <?php echo $row['descripcion1'] ?> </p>
+      <button class="descripcion-imagenes-button" type="button" name="button">MÁS INFO</button>
+      <ul class="mas-info">
+        <a href="<?php echo $row['google_maps'] ?>"><li><i class="fas fa-external-link-alt icon"></i>ABRIR EN GOOGLE MAPS</li></a>
+        <a href="#"><li><i class="fas fa-map-marker-alt icon"></i>DIRECCIÓN</li></a>
+        <a href="#"><li><i class="far fa-calendar-alt icon"></i>HORARIO</li></a>
+      </ul>
     </div>
     <?php
+        }
       }
     }
     ?>
@@ -108,23 +111,25 @@ require("connect.php");
 
       if($query_check > 0){
         while($row = mysqli_fetch_assoc($query_run)) {
+          if($row['desc_subtitulo2'] !== ""){
 
       ?>
     <div class="descripcion-imagenes">
-      <img class="imagen-descripcion" src="<?php echo $row['imagen'] ?>"></img>
-      <button class="descripcion-imagenes-button" type="button" name="button">MÁS INFO</button>
-      <ul class="mas-info">
-        <a href="<?php echo $row['google_maps'] ?>"><li><i class="fas fa-external-link-alt icon"></i>ABRIR EN GOOGLE MAPS</li></a>
-        <a href="#"><li><i class="fas fa-map-marker-alt icon"></i>DIRECCIÓN</li></a>
-        <a href="#"><li><i class="far fa-calendar-alt icon"></i>HORARIO</li></a>
-      </ul>
+      <img class="imagen-descripcion" src="<?php echo $row['imagen2'] ?>"></img>
     </div>
     <div class="descripcion-texto">
       <h2> <?php echo $row['desc_subtitulo2'] ?> </h2>
       <h4> <?php echo $row['etiqueta2'] ?> </h4>
       <p> <?php echo $row['descripcion2'] ?> </p>
+      <button class="descripcion-imagenes-button" type="button" name="button">MÁS INFO</button>
+      <ul class="mas-info">
+        <a href="<?php echo $row['google_maps'] ?>"><li><i class="fas fa-external-link-alt icon"></i>ABRIR EN GOOGLE MAPS</li></a>
+        <a href="#"><li><i class="fas fa-map-marker-alt icon"></i>DIRECCIÓN</li></a>
+        <a href="#"><li><i class="far fa-calendar-alt icon"></i>HORARIO</li></a>
+      </ul>
     </div>
     <?php
+        }
       }
     }
     ?>
@@ -140,23 +145,25 @@ require("connect.php");
 
       if($query_check > 0){
         while($row = mysqli_fetch_assoc($query_run)) {
+          if($row['desc_subtitulo3'] !== ""){
 
       ?>
     <div class="descripcion-imagenes">
-      <img class="imagen-descripcion" src="<?php echo $row['imagen'] ?>"></img>
-      <button class="descripcion-imagenes-button" type="button" name="button">MÁS INFO</button>
-      <ul class="mas-info">
-        <a href="<?php echo $row['google_maps'] ?>"><li><i class="fas fa-external-link-alt icon"></i>ABRIR EN GOOGLE MAPS</li></a>
-        <a href="#"><li><i class="fas fa-map-marker-alt icon"></i>DIRECCIÓN</li></a>
-        <a href="#"><li><i class="far fa-calendar-alt icon"></i>HORARIO</li></a>
-      </ul>
+      <img class="imagen-descripcion" src="<?php echo $row['imagen3'] ?>"></img>
     </div>
     <div class="descripcion-texto">
       <h2> <?php echo $row['desc_subtitulo3'] ?> </h2>
       <h4> <?php echo $row['etiqueta3'] ?> </h4>
       <p> <?php echo $row['descripcion3'] ?> </p>
+      <button class="descripcion-imagenes-button" type="button" name="button">MÁS INFO</button>
+      <ul class="mas-info">
+        <a href="<?php echo $row['google_maps'] ?>"><li><i class="fas fa-external-link-alt icon"></i>ABRIR EN GOOGLE MAPS</li></a>
+        <a href="#"><li><i class="fas fa-map-marker-alt icon"></i>DIRECCIÓN</li></a>
+        <a href="#"><li><i class="far fa-calendar-alt icon"></i>HORARIO</li></a>
+      </ul>
     </div>
     <?php
+        }
       }
     }
     ?>
@@ -172,23 +179,25 @@ require("connect.php");
 
       if($query_check > 0){
         while($row = mysqli_fetch_assoc($query_run)) {
+          if($row['desc_subtitulo4'] !== ""){
 
       ?>
     <div class="descripcion-imagenes">
-      <img class="imagen-descripcion" src="<?php echo $row['imagen'] ?>"></img>
-      <button class="descripcion-imagenes-button" type="button" name="button">MÁS INFO</button>
-      <ul class="mas-info">
-        <a href="<?php echo $row['google_maps'] ?>"><li><i class="fas fa-external-link-alt icon"></i>ABRIR EN GOOGLE MAPS</li></a>
-        <a href="#"><li><i class="fas fa-map-marker-alt icon"></i>DIRECCIÓN</li></a>
-        <a href="#"><li><i class="far fa-calendar-alt icon"></i>HORARIO</li></a>
-      </ul>
+      <img class="imagen-descripcion" src="<?php echo $row['imagen4'] ?>"></img>
     </div>
     <div class="descripcion-texto">
       <h2> <?php echo $row['desc_subtitulo4'] ?> </h2>
       <h4> <?php echo $row['etiqueta4'] ?> </h4>
       <p> <?php echo $row['descripcion4'] ?> </p>
+      <button class="descripcion-imagenes-button" type="button" name="button">MÁS INFO</button>
+      <ul class="mas-info">
+        <a href="<?php echo $row['google_maps'] ?>"><li><i class="fas fa-external-link-alt icon"></i>ABRIR EN GOOGLE MAPS</li></a>
+        <a href="#"><li><i class="fas fa-map-marker-alt icon"></i>DIRECCIÓN</li></a>
+        <a href="#"><li><i class="far fa-calendar-alt icon"></i>HORARIO</li></a>
+      </ul>
     </div>
     <?php
+        }
       }
     }
     ?>
@@ -204,23 +213,25 @@ require("connect.php");
 
       if($query_check > 0){
         while($row = mysqli_fetch_assoc($query_run)) {
+          if($row['desc_subtitulo5'] !== ""){
 
       ?>
     <div class="descripcion-imagenes">
-      <img class="imagen-descripcion" src="<?php echo $row['imagen'] ?>"></img>
-      <button class="descripcion-imagenes-button" type="button" name="button">MÁS INFO</button>
-      <ul class="mas-info">
-        <a href="<?php echo $row['google_maps'] ?>"><li><i class="fas fa-external-link-alt icon"></i>ABRIR EN GOOGLE MAPS</li></a>
-        <a href="#"><li><i class="fas fa-map-marker-alt icon"></i>DIRECCIÓN</li></a>
-        <a href="#"><li><i class="far fa-calendar-alt icon"></i>HORARIO</li></a>
-      </ul>
+      <img class="imagen-descripcion" src="<?php echo $row['imagen5'] ?>"></img>
     </div>
     <div class="descripcion-texto">
       <h2> <?php echo $row['desc_subtitulo5'] ?> </h2>
       <h4> <?php echo $row['etiqueta5'] ?> </h4>
       <p> <?php echo $row['descripcion5'] ?> </p>
+      <button class="descripcion-imagenes-button" type="button" name="button">MÁS INFO</button>
+      <ul class="mas-info">
+        <a href="<?php echo $row['google_maps'] ?>"><li><i class="fas fa-external-link-alt icon"></i>ABRIR EN GOOGLE MAPS</li></a>
+        <a href="#"><li><i class="fas fa-map-marker-alt icon"></i>DIRECCIÓN</li></a>
+        <a href="#"><li><i class="far fa-calendar-alt icon"></i>HORARIO</li></a>
+      </ul>
     </div>
     <?php
+        }
       }
     }
     ?>
@@ -236,23 +247,25 @@ require("connect.php");
 
       if($query_check > 0){
         while($row = mysqli_fetch_assoc($query_run)) {
+          if($row['desc_subtitulo6'] !== ""){
 
       ?>
     <div class="descripcion-imagenes">
-      <img class="imagen-descripcion" src="<?php echo $row['imagen'] ?>"></img>
-      <button class="descripcion-imagenes-button" type="button" name="button">MÁS INFO</button>
-      <ul class="mas-info">
-        <a href="<?php echo $row['google_maps'] ?>"><li><i class="fas fa-external-link-alt icon"></i>ABRIR EN GOOGLE MAPS</li></a>
-        <a href="#"><li><i class="fas fa-map-marker-alt icon"></i>DIRECCIÓN</li></a>
-        <a href="#"><li><i class="far fa-calendar-alt icon"></i>HORARIO</li></a>
-      </ul>
+      <img class="imagen-descripcion" src="<?php echo $row['imagen6'] ?>"></img>
     </div>
     <div class="descripcion-texto">
       <h2> <?php echo $row['desc_subtitulo6'] ?> </h2>
       <h4> <?php echo $row['etiqueta6'] ?> </h4>
       <p> <?php echo $row['descripcion6'] ?> </p>
+      <button class="descripcion-imagenes-button" type="button" name="button">MÁS INFO</button>
+      <ul class="mas-info">
+        <a href="<?php echo $row['google_maps'] ?>"><li><i class="fas fa-external-link-alt icon"></i>ABRIR EN GOOGLE MAPS</li></a>
+        <a href="#"><li><i class="fas fa-map-marker-alt icon"></i>DIRECCIÓN</li></a>
+        <a href="#"><li><i class="far fa-calendar-alt icon"></i>HORARIO</li></a>
+      </ul>
     </div>
     <?php
+        }
       }
     }
     ?>
@@ -268,23 +281,25 @@ require("connect.php");
 
       if($query_check > 0){
         while($row = mysqli_fetch_assoc($query_run)) {
+          if($row['desc_subtitulo7'] !== ""){
 
       ?>
     <div class="descripcion-imagenes">
-      <img class="imagen-descripcion" src="<?php echo $row['imagen'] ?>"></img>
-      <button class="descripcion-imagenes-button" type="button" name="button">MÁS INFO</button>
-      <ul class="mas-info">
-        <a href="<?php echo $row['google_maps'] ?>"><li><i class="fas fa-external-link-alt icon"></i>ABRIR EN GOOGLE MAPS</li></a>
-        <a href="#"><li><i class="fas fa-map-marker-alt icon"></i>DIRECCIÓN</li></a>
-        <a href="#"><li><i class="far fa-calendar-alt icon"></i>HORARIO</li></a>
-      </ul>
+      <img class="imagen-descripcion" src="<?php echo $row['imagen7'] ?>"></img>
     </div>
     <div class="descripcion-texto">
       <h2> <?php echo $row['desc_subtitulo7'] ?> </h2>
       <h4> <?php echo $row['etiqueta7'] ?> </h4>
       <p> <?php echo $row['descripcion7'] ?> </p>
+      <button class="descripcion-imagenes-button" type="button" name="button">MÁS INFO</button>
+      <ul class="mas-info">
+        <a href="<?php echo $row['google_maps'] ?>"><li><i class="fas fa-external-link-alt icon"></i>ABRIR EN GOOGLE MAPS</li></a>
+        <a href="#"><li><i class="fas fa-map-marker-alt icon"></i>DIRECCIÓN</li></a>
+        <a href="#"><li><i class="far fa-calendar-alt icon"></i>HORARIO</li></a>
+      </ul>
     </div>
     <?php
+        }
       }
     }
     ?>
@@ -300,10 +315,16 @@ require("connect.php");
 
       if($query_check > 0){
         while($row = mysqli_fetch_assoc($query_run)) {
+          if($row['desc_subtitulo8'] !== ""){
 
       ?>
     <div class="descripcion-imagenes">
-      <img class="imagen-descripcion" src="<?php echo $row['imagen'] ?>"></img>
+      <img class="imagen-descripcion" src="<?php echo $row['imagen8'] ?>"></img>
+    </div>
+    <div class="descripcion-texto">
+      <h2> <?php echo $row['desc_subtitulo8'] ?> </h2>
+      <h4> <?php echo $row['etiqueta8'] ?> </h4>
+      <p> <?php echo $row['descripcion8'] ?> </p>
       <button class="descripcion-imagenes-button" type="button" name="button">MÁS INFO</button>
       <ul class="mas-info">
         <a href="<?php echo $row['google_maps'] ?>"><li><i class="fas fa-external-link-alt icon"></i>ABRIR EN GOOGLE MAPS</li></a>
@@ -311,12 +332,8 @@ require("connect.php");
         <a href="#"><li><i class="far fa-calendar-alt icon"></i>HORARIO</li></a>
       </ul>
     </div>
-    <div class="descripcion-texto">
-      <h2> <?php echo $row['desc_subtitulo8'] ?> </h2>
-      <h4> <?php echo $row['etiqueta8'] ?> </h4>
-      <p> <?php echo $row['descripcion8'] ?> </p>
-    </div>
     <?php
+        }
       }
     }
     ?>
@@ -332,10 +349,16 @@ require("connect.php");
 
       if($query_check > 0){
         while($row = mysqli_fetch_assoc($query_run)) {
+          if($row['desc_subtitulo9'] !== ""){
 
       ?>
     <div class="descripcion-imagenes">
-      <img class="imagen-descripcion" src="<?php echo $row['imagen'] ?>"></img>
+      <img class="imagen-descripcion" src="<?php echo $row['imagen9'] ?>"></img>
+    </div>
+    <div class="descripcion-texto">
+      <h2> <?php echo $row['desc_subtitulo9'] ?> </h2>
+      <h4> <?php echo $row['etiqueta9'] ?> </h4>
+      <p> <?php echo $row['descripcion9'] ?> </p>
       <button class="descripcion-imagenes-button" type="button" name="button">MÁS INFO</button>
       <ul class="mas-info">
         <a href="<?php echo $row['google_maps'] ?>"><li><i class="fas fa-external-link-alt icon"></i>ABRIR EN GOOGLE MAPS</li></a>
@@ -343,12 +366,8 @@ require("connect.php");
         <a href="#"><li><i class="far fa-calendar-alt icon"></i>HORARIO</li></a>
       </ul>
     </div>
-    <div class="descripcion-texto">
-      <h2> <?php echo $row['desc_subtitulo9'] ?> </h2>
-      <h4> <?php echo $row['etiqueta9'] ?> </h4>
-      <p> <?php echo $row['descripcion9'] ?> </p>
-    </div>
     <?php
+        }
       }
     }
     ?>
@@ -358,16 +377,23 @@ require("connect.php");
     <?php
       $id_articulo_select = $_GET['id_articulo_select'];
 
-      $query = "SELECT * FROM articulos WHERE id_articulo = $id_articulo_select";
+      $query = "SELECT desc_subtitulo10, etiqueta10, descripcion10, imagen10 FROM articulos WHERE id_articulo = $id_articulo_select";
       $query_run = mysqli_query($conexion, $query);
       $query_check = mysqli_num_rows($query_run);
 
       if($query_check > 0){
         while($row = mysqli_fetch_assoc($query_run)) {
+          if($row['desc_subtitulo10'] !== ""){
+
 
       ?>
     <div class="descripcion-imagenes">
-      <img class="imagen-descripcion" src="<?php echo $row['imagen'] ?>"></img>
+      <img class="imagen-descripcion" src="<?php echo $row['imagen10'] ?>"></img>
+    </div>
+    <div class="descripcion-texto">
+      <h2> <?php echo $row['desc_subtitulo10'] ?> </h2>
+      <h4> <?php echo $row['etiqueta10'] ?> </h4>
+      <p> <?php echo $row['descripcion10'] ?> </p>
       <button class="descripcion-imagenes-button" type="button" name="button">MÁS INFO</button>
       <ul class="mas-info">
         <a href="<?php echo $row['google_maps'] ?>"><li><i class="fas fa-external-link-alt icon"></i>ABRIR EN GOOGLE MAPS</li></a>
@@ -375,12 +401,8 @@ require("connect.php");
         <a href="#"><li><i class="far fa-calendar-alt icon"></i>HORARIO</li></a>
       </ul>
     </div>
-    <div class="descripcion-texto">
-      <h2> <?php echo $row['desc_subtitulo10'] ?> </h2>
-      <h4> <?php echo $row['etiqueta10'] ?> </h4>
-      <p> <?php echo $row['descripcion10'] ?> </p>
-    </div>
     <?php
+        }
       }
     }
     ?>
@@ -397,6 +419,8 @@ require("connect.php");
     </div>
     <button type="button">PUBLICAR</button>
   </section>
+
+
 
   <section class="slide-articulos">
     <ul id="autoWidth" class="cs-hidden">

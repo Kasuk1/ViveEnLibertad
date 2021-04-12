@@ -30,7 +30,6 @@
 
             <div class="card-body">
 
-
                 <?php
 
                 if(isset($_POST['edit_btn'])){
@@ -38,16 +37,16 @@
 
 
                     $query = "SELECT a.id_articulo, a.id_categoria, c.nombre_categoria, a.nombre_articulo, a.titulo,
-                                      a.desc_subtitulo1, a.etiqueta1, a.descripcion1,
-                                      a.desc_subtitulo2, a.etiqueta2, a.descripcion2,
-                                      a.desc_subtitulo3, a.etiqueta3, a.descripcion3,
-                                      a.desc_subtitulo4, a.etiqueta4, a.descripcion4,
-                                      a.desc_subtitulo5, a.etiqueta5, a.descripcion5,
-                                      a.desc_subtitulo6, a.etiqueta6, a.descripcion6,
-                                      a.desc_subtitulo7, a.etiqueta7, a.descripcion7,
-                                      a.desc_subtitulo8, a.etiqueta8, a.descripcion8,
-                                      a.desc_subtitulo9, a.etiqueta9, a.descripcion9,
-                                      a.desc_subtitulo10, a.etiqueta10, a.descripcion10,
+                                      a.desc_subtitulo1, a.etiqueta1, a.descripcion1, a.imagen1,
+                                      a.desc_subtitulo2, a.etiqueta2, a.descripcion2, a.imagen2,
+                                      a.desc_subtitulo3, a.etiqueta3, a.descripcion3, a.imagen3,
+                                      a.desc_subtitulo4, a.etiqueta4, a.descripcion4, a.imagen4,
+                                      a.desc_subtitulo5, a.etiqueta5, a.descripcion5, a.imagen5,
+                                      a.desc_subtitulo6, a.etiqueta6, a.descripcion6, a.imagen6,
+                                      a.desc_subtitulo7, a.etiqueta7, a.descripcion7, a.imagen7,
+                                      a.desc_subtitulo8, a.etiqueta8, a.descripcion8, a.imagen8,
+                                      a.desc_subtitulo9, a.etiqueta9, a.descripcion9, a.imagen9,
+                                      a.desc_subtitulo10, a.etiqueta10, a.descripcion10, a.imagen10,
                                       a.imagen, a.google_maps
                     FROM articulos a INNER JOIN categorias c on a.id_categoria = c.id_categoria WHERE a.id_articulo = $id_articulo
                     ORDER BY a.id_articulo;";
@@ -57,6 +56,15 @@
                     ?>
 
                     <form action="articulo_code.php" method="POST" enctype="multipart/form-data">
+                      <div class="modal-header">
+                        <h5 class="text-primary col-md-2">Datos de presentación</h5>
+                        <p class="">Antes de empezar a editar los datos del artículo,
+                          se recomienda tenerlos anotados en otra herramienta editora de texto y luego ir
+                          copiando para evitar problemas futuros.</p>
+                      </div>
+
+                        <hr style="background-color: #ffff">
+
                         <input type="hidden" name="edit_id" value="<?php echo $row['id_articulo']?>">
 
                         <div class="input-group">
@@ -77,12 +85,32 @@
                           </div>
                         </div>
 
-
+                        <hr style="background-color: #ffff">
 
                         <div class="form-group">
                           <label class="text-primary font-weight-bold">Título de Artículo</label>
                             <textarea required type="text" name="edit_titulo" rows="3" class="form-control text-justify" placeholder="Título de artículo"><?php echo $row['titulo'] ?></textarea>
                         </div>
+
+                        <hr style="background-color: #ffff">
+
+                        <div class="form-group">
+                            <label class="text-primary font-weight-bold">Subir Imagen Principal</label>
+                            <input required type="file" name="data_edit_imagen" id="data_edit_imagen" class="form-control">
+                            <small class="form-text text-muted">Tendra que ingresar la nueva o anterior imagen para editar el artículo y recuerde,
+                                                                solo puede subir archivos con extensión .jpg con un máximo de 25MB. Además,
+                                                                se recomienda sea de alta resolución y evitar el fondo de color claro intenso.</small>
+                        </div>
+
+                        <hr style="background-color: #ffff">
+
+                        <div class="modal-header">
+                          <h5 class="text-primary col-md-2">Datos de contenido</h5>
+                          <p class="">Se puede agregar un máximo de 10 secciones con sus respectivas imágenes en URL. Recuerde que
+                                      solo la sección 1 es obligatoria no dejarlo vacío al momento de registrar.</p>
+                        </div>
+
+                        <hr style="background-color: #ffff">
 
                         <div class="input-group">
                           <div class="form-group col-md-4">
@@ -101,178 +129,258 @@
                             <textarea required type="text" name="edit_descripcion1" rows="15" class="form-control text-justify" placeholder="Descripción o Contenido"><?php echo $row['descripcion1'] ?></textarea>
                             <small class="form-text text-muted">Ingrese la descripción 1.</small>
                           </div>
+
+                          <div class="form-group col-md-12">
+                            <label class="text-primary font-weight-bold">Link de Imagen Sección 1</label>
+                            <input required type="text" name="edit_imagen1" class="form-control text-justify" placeholder="Link" value="<?php echo $row['imagen1'] ?>">
+                            <small class="form-text text-muted">Ingrese el link URL de la imagen que se desglosará en la sección 1.</small>
+                          </div>
                         </div>
+
+                        <hr>
 
                         <div class="input-group">
                           <div class="form-group col-md-4">
                             <label class="text-primary font-weight-bold">Subtitulo 2</label>
-                            <textarea required type="text" name="edit_subtitulo2" rows="3" class="form-control text-justify" placeholder="Subtitulo"><?php echo $row['desc_subtitulo2'] ?></textarea>
+                            <textarea type="text" name="edit_subtitulo2" rows="3" class="form-control text-justify" placeholder="Subtitulo"><?php echo $row['desc_subtitulo2'] ?></textarea>
                             <small class="form-text text-muted">Ingrese el subtitulo 2.</small>
 
                             <hr style="background-color:#ffff">
                             <label class="text-primary font-weight-bold">Etiquetas 2</label>
-                            <input required type="text" name="edit_etiqueta2" class="form-control text-justify" placeholder="Etiquetas" value="<?php echo $row['etiqueta2'] ?>">
+                            <input type="text" name="edit_etiqueta2" class="form-control text-justify" placeholder="Etiquetas" value="<?php echo $row['etiqueta2'] ?>">
                             <small class="form-text text-muted">Ingrese máximo 4 palabras como etiqueta.</small>
                           </div>
 
                           <div class="form-group col-md-8 ml-10">
                             <label class="text-primary font-weight-bold">Descripción 2</label>
-                            <textarea required type="text" name="edit_descripcion2" rows="15" class="form-control text-justify" placeholder="Descripción o Contenido"><?php echo $row['descripcion2'] ?></textarea>
+                            <textarea type="text" name="edit_descripcion2" rows="15" class="form-control text-justify" placeholder="Descripción o Contenido"><?php echo $row['descripcion2'] ?></textarea>
                             <small class="form-text text-muted">Ingrese la descripción 2.</small>
                           </div>
+
+                          <div class="form-group col-md-12">
+                            <label class="text-primary font-weight-bold">Link de Imagen Sección 2</label>
+                            <input type="text" name="edit_imagen2" class="form-control text-justify" placeholder="Link" value="<?php echo $row['imagen2'] ?>">
+                            <small class="form-text text-muted">Ingrese el link URL de la imagen que se desglosará en la sección 2.</small>
+                          </div>
                         </div>
+
+                        <hr>
 
                         <div class="input-group">
                           <div class="form-group col-md-4">
                             <label class="text-primary font-weight-bold">Subtitulo 3</label>
-                            <textarea required type="text" name="edit_subtitulo3" rows="3" class="form-control text-justify" placeholder="Subtitulo"><?php echo $row['desc_subtitulo3'] ?></textarea>
+                            <textarea type="text" name="edit_subtitulo3" rows="3" class="form-control text-justify" placeholder="Subtitulo"><?php echo $row['desc_subtitulo3'] ?></textarea>
                             <small class="form-text text-muted">Ingrese el subtitulo 3.</small>
 
                             <hr style="background-color:#ffff">
                             <label class="text-primary font-weight-bold">Etiquetas 3</label>
-                            <input required type="text" name="edit_etiqueta3" class="form-control text-justify" placeholder="Etiquetas" value="<?php echo $row['etiqueta3'] ?>">
+                            <input type="text" name="edit_etiqueta3" class="form-control text-justify" placeholder="Etiquetas" value="<?php echo $row['etiqueta3'] ?>">
                             <small class="form-text text-muted">Ingrese máximo 4 palabras como etiqueta.</small>
                           </div>
 
                           <div class="form-group col-md-8 ml-10">
                             <label class="text-primary font-weight-bold">Descripción 3</label>
-                            <textarea required type="text" name="edit_descripcion3" rows="15" class="form-control text-justify" placeholder="Descripción o Contenido"><?php echo $row['descripcion3'] ?></textarea>
+                            <textarea type="text" name="edit_descripcion3" rows="15" class="form-control text-justify" placeholder="Descripción o Contenido"><?php echo $row['descripcion3'] ?></textarea>
                             <small class="form-text text-muted">Ingrese la descripción 3.</small>
                           </div>
+
+                          <div class="form-group col-md-12">
+                            <label class="text-primary font-weight-bold">Link de Imagen Sección 3</label>
+                            <input type="text" name="edit_imagen3" class="form-control text-justify" placeholder="Link" value="<?php echo $row['imagen3'] ?>">
+                            <small class="form-text text-muted">Ingrese el link URL de la imagen que se desglosará en la sección 3.</small>
+                          </div>
                         </div>
+
+                        <hr>
 
                         <div class="input-group">
                           <div class="form-group col-md-4">
                             <label class="text-primary font-weight-bold">Subtitulo 4</label>
-                            <textarea required type="text" name="edit_subtitulo4" rows="3" class="form-control text-justify" placeholder="Subtitulo"><?php echo $row['desc_subtitulo4'] ?></textarea>
+                            <textarea type="text" name="edit_subtitulo4" rows="3" class="form-control text-justify" placeholder="Subtitulo"><?php echo $row['desc_subtitulo4'] ?></textarea>
                             <small class="form-text text-muted">Ingrese el subtitulo 4.</small>
 
                             <hr style="background-color:#ffff">
                             <label class="text-primary font-weight-bold">Etiquetas 4</label>
-                            <input required type="text" name="edit_etiqueta4" class="form-control text-justify" placeholder="Etiquetas" value="<?php echo $row['etiqueta4'] ?>">
+                            <input type="text" name="edit_etiqueta4" class="form-control text-justify" placeholder="Etiquetas" value="<?php echo $row['etiqueta4'] ?>">
                             <small class="form-text text-muted">Ingrese máximo 4 palabras como etiqueta.</small>
                           </div>
 
                           <div class="form-group col-md-8 ml-10">
                             <label class="text-primary font-weight-bold">Descripción 4</label>
-                            <textarea required type="text" name="edit_descripcion4" rows="15" class="form-control text-justify" placeholder="Descripción o Contenido"><?php echo $row['descripcion4'] ?></textarea>
+                            <textarea type="text" name="edit_descripcion4" rows="15" class="form-control text-justify" placeholder="Descripción o Contenido"><?php echo $row['descripcion4'] ?></textarea>
                             <small class="form-text text-muted">Ingrese la descripción 4.</small>
                           </div>
+
+                          <div class="form-group col-md-12">
+                            <label class="text-primary font-weight-bold">Link de Imagen Sección 4</label>
+                            <input type="text" name="edit_imagen4" class="form-control text-justify" placeholder="Link" value="<?php echo $row['imagen4'] ?>">
+                            <small class="form-text text-muted">Ingrese el link URL de la imagen que se desglosará en la sección 4.</small>
+                          </div>
                         </div>
+
+                        <hr>
 
                         <div class="input-group">
                           <div class="form-group col-md-4">
                             <label class="text-primary font-weight-bold">Subtitulo 5</label>
-                            <textarea required type="text" name="edit_subtitulo5" rows="3" class="form-control text-justify" placeholder="Subtitulo"><?php echo $row['desc_subtitulo5'] ?></textarea>
+                            <textarea type="text" name="edit_subtitulo5" rows="3" class="form-control text-justify" placeholder="Subtitulo"><?php echo $row['desc_subtitulo5'] ?></textarea>
                             <small class="form-text text-muted">Ingrese el subtitulo 5.</small>
 
                             <hr style="background-color:#ffff">
                             <label class="text-primary font-weight-bold">Etiquetas 5</label>
-                            <input required type="text" name="edit_etiqueta5" class="form-control text-justify" placeholder="Etiquetas" value="<?php echo $row['etiqueta5'] ?>">
+                            <input type="text" name="edit_etiqueta5" class="form-control text-justify" placeholder="Etiquetas" value="<?php echo $row['etiqueta5'] ?>">
                             <small class="form-text text-muted">Ingrese máximo 4 palabras como etiqueta.</small>
                           </div>
 
                           <div class="form-group col-md-8 ml-10">
                             <label class="text-primary font-weight-bold">Descripción 5</label>
-                            <textarea required type="text" name="edit_descripcion5" rows="15" class="form-control text-justify" placeholder="Descripción o Contenido"><?php echo $row['descripcion5'] ?></textarea>
+                            <textarea type="text" name="edit_descripcion5" rows="15" class="form-control text-justify" placeholder="Descripción o Contenido"><?php echo $row['descripcion5'] ?></textarea>
                             <small class="form-text text-muted">Ingrese la descripción 5.</small>
                           </div>
+
+                          <div class="form-group col-md-12">
+                            <label class="text-primary font-weight-bold">Link de Imagen Sección 5</label>
+                            <input type="text" name="edit_imagen5" class="form-control text-justify" placeholder="Link" value="<?php echo $row['imagen5'] ?>">
+                            <small class="form-text text-muted">Ingrese el link URL de la imagen que se desglosará en la sección 5.</small>
+                          </div>
                         </div>
+
+                        <hr>
 
                         <div class="input-group">
                           <div class="form-group col-md-4">
                             <label class="text-primary font-weight-bold">Subtitulo 6</label>
-                            <textarea required type="text" name="edit_subtitulo6" rows="3" class="form-control text-justify" placeholder="Subtitulo"><?php echo $row['desc_subtitulo6'] ?></textarea>
+                            <textarea type="text" name="edit_subtitulo6" rows="3" class="form-control text-justify" placeholder="Subtitulo"><?php echo $row['desc_subtitulo6'] ?></textarea>
                             <small class="form-text text-muted">Ingrese el subtitulo 6.</small>
 
                             <hr style="background-color:#ffff">
                             <label class="text-primary font-weight-bold">Etiquetas 6</label>
-                            <input required type="text" name="edit_etiqueta6" class="form-control text-justify" placeholder="Etiquetas" value="<?php echo $row['etiqueta6'] ?>">
+                            <input type="text" name="edit_etiqueta6" class="form-control text-justify" placeholder="Etiquetas" value="<?php echo $row['etiqueta6'] ?>">
                             <small class="form-text text-muted">Ingrese máximo 4 palabras como etiqueta.</small>
                           </div>
 
                           <div class="form-group col-md-8 ml-10">
                             <label class="text-primary font-weight-bold">Descripción 6</label>
-                            <textarea required type="text" name="edit_descripcion6" rows="15" class="form-control text-justify" placeholder="Descripción o Contenido"><?php echo $row['descripcion6'] ?></textarea>
+                            <textarea type="text" name="edit_descripcion6" rows="15" class="form-control text-justify" placeholder="Descripción o Contenido"><?php echo $row['descripcion6'] ?></textarea>
                             <small class="form-text text-muted">Ingrese la descripción 6.</small>
                           </div>
+
+                          <div class="form-group col-md-12">
+                            <label class="text-primary font-weight-bold">Link de Imagen Sección 6</label>
+                            <input type="text" name="edit_imagen6" class="form-control text-justify" placeholder="Link" value="<?php echo $row['imagen6'] ?>">
+                            <small class="form-text text-muted">Ingrese el link URL de la imagen que se desglosará en la sección 6.</small>
+                          </div>
                         </div>
+
+                        <hr>
 
                         <div class="input-group">
                           <div class="form-group col-md-4">
                             <label class="text-primary font-weight-bold">Subtitulo 7</label>
-                            <textarea required type="text" name="edit_subtitulo7" rows="3" class="form-control text-justify" placeholder="Subtitulo"><?php echo $row['desc_subtitulo7'] ?></textarea>
+                            <textarea type="text" name="edit_subtitulo7" rows="3" class="form-control text-justify" placeholder="Subtitulo"><?php echo $row['desc_subtitulo7'] ?></textarea>
                             <small class="form-text text-muted">Ingrese el subtitulo 7.</small>
 
                             <hr style="background-color:#ffff">
                             <label class="text-primary font-weight-bold">Etiquetas 7</label>
-                            <input required type="text" name="edit_etiqueta7" class="form-control text-justify" placeholder="Etiquetas" value="<?php echo $row['etiqueta7'] ?>">
+                            <input type="text" name="edit_etiqueta7" class="form-control text-justify" placeholder="Etiquetas" value="<?php echo $row['etiqueta7'] ?>">
                             <small class="form-text text-muted">Ingrese máximo 4 palabras como etiqueta.</small>
                           </div>
 
                           <div class="form-group col-md-8 ml-10">
                             <label class="text-primary font-weight-bold">Descripción 7</label>
-                            <textarea required type="text" name="edit_descripcion7" rows="15" class="form-control text-justify" placeholder="Descripción o Contenido"><?php echo $row['descripcion7'] ?></textarea>
+                            <textarea type="text" name="edit_descripcion7" rows="15" class="form-control text-justify" placeholder="Descripción o Contenido"><?php echo $row['descripcion7'] ?></textarea>
                             <small class="form-text text-muted">Ingrese la descripción 7.</small>
                           </div>
+
+                          <div class="form-group col-md-12">
+                            <label class="text-primary font-weight-bold">Link de Imagen Sección 7</label>
+                            <input type="text" name="edit_imagen7" class="form-control text-justify" placeholder="Link" value="<?php echo $row['imagen7'] ?>">
+                            <small class="form-text text-muted">Ingrese el link URL de la imagen que se desglosará en la sección 7.</small>
+                          </div>
                         </div>
+
+                        <hr>
 
                         <div class="input-group">
                           <div class="form-group col-md-4">
                             <label class="text-primary font-weight-bold">Subtitulo 8</label>
-                            <textarea required type="text" name="edit_subtitulo8" rows="3" class="form-control text-justify" placeholder="Subtitulo"><?php echo $row['desc_subtitulo8'] ?></textarea>
+                            <textarea type="text" name="edit_subtitulo8" rows="3" class="form-control text-justify" placeholder="Subtitulo"><?php echo $row['desc_subtitulo8'] ?></textarea>
                             <small class="form-text text-muted">Ingrese el subtitulo 8.</small>
 
                             <hr style="background-color:#ffff">
                             <label class="text-primary font-weight-bold">Etiquetas 8</label>
-                            <input required type="text" name="edit_etiqueta8" class="form-control text-justify" placeholder="Etiquetas" value="<?php echo $row['etiqueta8'] ?>">
+                            <input type="text" name="edit_etiqueta8" class="form-control text-justify" placeholder="Etiquetas" value="<?php echo $row['etiqueta8'] ?>">
                             <small class="form-text text-muted">Ingrese máximo 4 palabras como etiqueta.</small>
                           </div>
 
                           <div class="form-group col-md-8 ml-10">
                             <label class="text-primary font-weight-bold">Descripción 8</label>
-                            <textarea required type="text" name="edit_descripcion8" rows="15" class="form-control text-justify" placeholder="Descripción o Contenido"><?php echo $row['descripcion8'] ?></textarea>
+                            <textarea type="text" name="edit_descripcion8" rows="15" class="form-control text-justify" placeholder="Descripción o Contenido"><?php echo $row['descripcion8'] ?></textarea>
                             <small class="form-text text-muted">Ingrese la descripción 8.</small>
                           </div>
+
+                          <div class="form-group col-md-12">
+                            <label class="text-primary font-weight-bold">Link de Imagen Sección 8</label>
+                            <input type="text" name="edit_imagen8" class="form-control text-justify" placeholder="Link" value="<?php echo $row['imagen8'] ?>">
+                            <small class="form-text text-muted">Ingrese el link URL de la imagen que se desglosará en la sección 8.</small>
+                          </div>
                         </div>
+
+                        <hr>
 
                         <div class="input-group">
                           <div class="form-group col-md-4">
                             <label class="text-primary font-weight-bold">Subtitulo 9</label>
-                            <textarea required type="text" name="edit_subtitulo9" rows="3" class="form-control text-justify" placeholder="Subtitulo"><?php echo $row['desc_subtitulo9'] ?></textarea>
+                            <textarea type="text" name="edit_subtitulo9" rows="3" class="form-control text-justify" placeholder="Subtitulo"><?php echo $row['desc_subtitulo9'] ?></textarea>
                             <small class="form-text text-muted">Ingrese el subtitulo 9.</small>
 
                             <hr style="background-color:#ffff">
                             <label class="text-primary font-weight-bold">Etiquetas 9</label>
-                            <input required type="text" name="edit_etiqueta9" class="form-control text-justify" placeholder="Etiquetas" value="<?php echo $row['etiqueta9'] ?>">
+                            <input type="text" name="edit_etiqueta9" class="form-control text-justify" placeholder="Etiquetas" value="<?php echo $row['etiqueta9'] ?>">
                             <small class="form-text text-muted">Ingrese máximo 4 palabras como etiqueta.</small>
                           </div>
 
                           <div class="form-group col-md-8 ml-10">
                             <label class="text-primary font-weight-bold">Descripción 9</label>
-                            <textarea required type="text" name="edit_descripcion9" rows="15" class="form-control text-justify" placeholder="Descripción o Contenido"><?php echo $row['descripcion9'] ?></textarea>
+                            <textarea type="text" name="edit_descripcion9" rows="15" class="form-control text-justify" placeholder="Descripción o Contenido"><?php echo $row['descripcion9'] ?></textarea>
                             <small class="form-text text-muted">Ingrese la descripción 9.</small>
                           </div>
+
+                          <div class="form-group col-md-12">
+                            <label class="text-primary font-weight-bold">Link de Imagen Sección 9</label>
+                            <input type="text" name="edit_imagen9" class="form-control text-justify" placeholder="Link" value="<?php echo $row['imagen9'] ?>">
+                            <small class="form-text text-muted">Ingrese el link URL de la imagen que se desglosará en la sección 9.</small>
+                          </div>
                         </div>
+
+                        <hr>
 
                         <div class="input-group">
                           <div class="form-group col-md-4">
                             <label class="text-primary font-weight-bold">Subtitulo 10</label>
-                            <textarea required type="text" name="edit_subtitulo10" rows="3" class="form-control text-justify" placeholder="Subtitulo"><?php echo $row['desc_subtitulo10'] ?></textarea>
+                            <textarea type="text" name="edit_subtitulo10" rows="3" class="form-control text-justify" placeholder="Subtitulo"><?php echo $row['desc_subtitulo10'] ?></textarea>
                             <small class="form-text text-muted">Ingrese el subtitulo 10.</small>
 
                             <hr style="background-color:#ffff">
                             <label class="text-primary font-weight-bold">Etiquetas 10</label>
-                            <input required type="text" name="edit_etiqueta10" class="form-control text-justify" placeholder="Etiquetas" value="<?php echo $row['etiqueta10'] ?>">
+                            <input type="text" name="edit_etiqueta10" class="form-control text-justify" placeholder="Etiquetas" value="<?php echo $row['etiqueta10'] ?>">
                             <small class="form-text text-muted">Ingrese máximo 4 palabras como etiqueta.</small>
                           </div>
 
                           <div class="form-group col-md-8 ml-10">
                             <label class="text-primary font-weight-bold">Descripción 10</label>
-                            <textarea required type="text" name="edit_descripcion10" rows="15" class="form-control text-justify" placeholder="Descripción o Contenido"><?php echo $row['descripcion10'] ?></textarea>
+                            <textarea type="text" name="edit_descripcion10" rows="15" class="form-control text-justify" placeholder="Descripción o Contenido"><?php echo $row['descripcion10'] ?></textarea>
                             <small class="form-text text-muted">Ingrese la descripción 10.</small>
                           </div>
+
+                          <div class="form-group col-md-12">
+                            <label class="text-primary font-weight-bold">Link de Imagen Sección 10</label>
+                            <input type="text" name="edit_imagen10" class="form-control text-justify" placeholder="Link" value="<?php echo $row['imagen10'] ?>">
+                            <small class="form-text text-muted">Ingrese el link URL de la imagen que se desglosará en la sección 10.</small>
+                          </div>
                         </div>
+
+                        <hr>
 
 
                       <div class="form-group">
@@ -281,16 +389,14 @@
                         <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato suele ser así: 28 de Julio 500, Cascas 13781</small>
                       </div>
 
-                        <div class="form-group">
-                            <label class="text-primary font-weight-bold">Subir Imagen</label>
-                            <input required type="file" name="data_edit_imagen" id="data_edit_imagen" class="form-control">
-                            <small class="form-text text-muted">Tendra que ingresar el nuevo o el mismo archivo para editar artículo y recuerde, solo puede subir archivos con extensión .jpg con un máximo de 25MB.</small>
-                        </div>
+                      <hr style="background-color: #ffff">
 
                         <div class=" form-group custom-control custom-switch">
                             <input required type="checkbox" class="custom-control-input" id="customSwitch1">
-                            <label class="custom-control-label text-danger" for="customSwitch1">Deslize el control si está seguro de editar</label>
+                            <label class="custom-control-label text-danger" for="customSwitch1">¿Seguro de editar el artículo?</label>
                         </div>
+
+                        <hr style="background-color: #ffff">
 
                         <div class="form-group">
                             <a href="gestion-articulos.php" class="btn btn-danger">Cancelar</a>
