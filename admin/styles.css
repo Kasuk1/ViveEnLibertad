@@ -65,3 +65,51 @@ p {
   background-color: #6699cc;
   color: #ffff;
 }
+
+/*------------------------VENTANA PRINCIPAL - ADMIN--------------------*/
+.menu-admin {
+  display: flex;
+  background-color: #DEEBFF;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  color: #636A85;
+  margin-bottom: 10px;
+}
+
+.menu-admin ul {
+  font-family: 'Manrope', sans-serif;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: space-around;
+  width: 350px;
+}
+
+
+.menu-admin a {
+  text-decoration: none;
+  color: #636A85;
+}
+
+.menu-admin a:hover {
+  color: #000000;
+}
+
+.about {
+  display: flex;
+  height: 200px;
+  flex-flow: column;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 400px;
+  text-align: justify;
+}
+
+.about h2, p {
+  width: 100%;
+}

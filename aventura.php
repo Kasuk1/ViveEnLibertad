@@ -13,9 +13,7 @@
       </ul>
 
       <div class="burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
+        <div class="line1">▼</div>
       </div>
     </section>
 
@@ -32,8 +30,8 @@
       <div class="articulo2">
         <img src=" <?php echo $row['imagen'] ?> ">
         <div class="articulo2-text">
-          <h2> <?php echo $row['nombre_articulo'] ?> </h2>
-          <p> <?php echo $row['titulo'] ?> </p>
+          <h4> <?php echo substr($row['nombre_articulo'],0,70); ?>...</h4>
+          <p> <?php echo substr($row['titulo'],0,100); ?>... </p>
           <a type="button" href="vista-articulo.php?id_articulo_select=<?php echo $row['id_articulo'] ?>&id_categoria_select=<?php echo $row['id_categoria'] ?>">LEER MÁS</a>
         </div>
       </div>
@@ -44,14 +42,5 @@
       ?>
 
     </section>
-
-    <div class="compartir">
-      <h4>COMPARTIR EN: </h4>
-      <i class="fab fa-facebook-f"></i>
-      <i class="fab fa-twitter"></i>
-      <i class="fab fa-whatsapp"></i>
-    </div>
-
-
 
 <?php include("includes/footer.php") ?>
