@@ -1,4 +1,7 @@
-<?php include('../connect.php'); ?>
+<?php
+include('../connect.php');
+require("session-check.php");
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -20,6 +23,16 @@
     <script src="js/JQuery3.3.1.js" charset="utf-8"></script>
   </head>
   <body>
+
+    <div class="menu-admin">
+      <h1>VIVEENLIBERTAD-ADMIN</h1>
+      <ul>
+        <li><a href="main-admin.php">Home</a></li>
+        <li><a href="gestion-articulos.php">Artículos</a></li>
+        <li><a href="gestion-comentarios.php">Comentarios</a></li>
+        <li><a href="session-destroy.php">Cerrar sesión</a></li>
+      </ul>
+    </div>
 
     <!-- Modal -->
 <div class="modal fade" id="articuloagregarmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -111,6 +124,12 @@
                         <input required type="text" name="imagen1" class="form-control text-justify" placeholder="Link">
                         <small class="form-text text-muted">Ingrese el link URL de la imagen que se desglosará en la sección 1.</small>
                       </div>
+
+                      <div class="form-group">
+                        <label class="text-primary font-weight-bold">Dirección 1</label>
+                        <textarea required type="text" name="direccion1" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps. El formato debería ser similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6"></textarea>
+                        <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de la función compartir de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato es similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6</small>
+                      </div>
                     </div>
 
                     <hr>
@@ -138,6 +157,12 @@
                         <label class="text-primary font-weight-bold">Link de Imagen Sección 2</label>
                         <input type="text" name="imagen2" class="form-control text-justify" placeholder="Link">
                         <small class="form-text text-muted">Ingrese el link URL de la imagen que se desglosará en la sección 2.</small>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="text-primary font-weight-bold">Dirección 2</label>
+                        <textarea type="text" name="direccion2" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps. El formato debería ser similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6"></textarea>
+                        <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de la función compartir de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato es similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6</small>
                       </div>
                     </div>
 
@@ -167,6 +192,12 @@
                         <input type="text" name="imagen3" class="form-control text-justify" placeholder="Link">
                         <small class="form-text text-muted">Ingrese el link URL de la imagen que se desglosará en la sección 3.</small>
                       </div>
+
+                      <div class="form-group">
+                        <label class="text-primary font-weight-bold">Dirección 3</label>
+                        <textarea type="text" name="direccion3" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps. El formato debería ser similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6"></textarea>
+                        <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de la función compartir de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato es similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6</small>
+                      </div>
                     </div>
 
                     <hr>
@@ -194,6 +225,12 @@
                         <label class="text-primary font-weight-bold">Link de Imagen Sección 4</label>
                         <input type="text" name="imagen4" class="form-control text-justify" placeholder="Link">
                         <small class="form-text text-muted">Ingrese el link URL de la imagen que se desglosará en la sección 4.</small>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="text-primary font-weight-bold">Dirección 4</label>
+                        <textarea type="text" name="direccion4" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps. El formato debería ser similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6"></textarea>
+                        <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de la función compartir de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato es similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6</small>
                       </div>
                     </div>
 
@@ -223,6 +260,12 @@
                         <input type="text" name="imagen5" class="form-control text-justify" placeholder="Link">
                         <small class="form-text text-muted">Ingrese el link URL de la imagen que se desglosará en la sección 5.</small>
                       </div>
+
+                      <div class="form-group">
+                        <label class="text-primary font-weight-bold">Dirección 5</label>
+                        <textarea type="text" name="direccion5" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps. El formato debería ser similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6"></textarea>
+                        <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de la función compartir de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato es similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6</small>
+                      </div>
                     </div>
 
                     <hr>
@@ -250,6 +293,12 @@
                         <label class="text-primary font-weight-bold">Link de Imagen Sección 6</label>
                         <input type="text" name="imagen6" class="form-control text-justify" placeholder="Link">
                         <small class="form-text text-muted">Ingrese el link URL de la imagen que se desglosará en la sección 6.</small>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="text-primary font-weight-bold">Dirección 6</label>
+                        <textarea type="text" name="direccion6" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps. El formato debería ser similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6"></textarea>
+                        <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de la función compartir de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato es similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6</small>
                       </div>
                     </div>
 
@@ -279,6 +328,12 @@
                         <input type="text" name="imagen7" class="form-control text-justify" placeholder="Link">
                         <small class="form-text text-muted">Ingrese el link URL de la imagen que se desglosará en la sección 7.</small>
                       </div>
+
+                      <div class="form-group">
+                        <label class="text-primary font-weight-bold">Dirección 7</label>
+                        <textarea type="text" name="direccion7" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps. El formato debería ser similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6"></textarea>
+                        <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de la función compartir de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato es similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6</small>
+                      </div>
                     </div>
 
                     <hr>
@@ -306,6 +361,12 @@
                         <label class="text-primary font-weight-bold">Link de Imagen Sección 8</label>
                         <input type="text" name="imagen8" class="form-control text-justify" placeholder="Link">
                         <small class="form-text text-muted">Ingrese el link URL de la imagen que se desglosará en la sección 8.</small>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="text-primary font-weight-bold">Dirección 8</label>
+                        <textarea type="text" name="direccion8" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps. El formato debería ser similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6"></textarea>
+                        <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de la función compartir de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato es similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6</small>
                       </div>
                     </div>
 
@@ -335,6 +396,12 @@
                         <input type="text" name="imagen9" class="form-control text-justify" placeholder="Link">
                         <small class="form-text text-muted">Ingrese el link URL de la imagen que se desglosará en la sección 9.</small>
                       </div>
+
+                      <div class="form-group">
+                        <label class="text-primary font-weight-bold">Dirección 9</label>
+                        <textarea type="text" name="direccion9" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps. El formato debería ser similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6"></textarea>
+                        <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de la función compartir de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato es similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6</small>
+                      </div>
                     </div>
 
                     <hr>
@@ -363,15 +430,17 @@
                         <input type="text" name="imagen10" class="form-control text-justify" placeholder="Link">
                         <small class="form-text text-muted">Ingrese el link URL de la imagen que se desglosará en la sección 10.</small>
                       </div>
+
+                      <div class="form-group">
+                        <label class="text-primary font-weight-bold">Dirección 10</label>
+                        <textarea type="text" name="direccion10" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps. El formato debería ser similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6"></textarea>
+                        <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de la función compartir de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato es similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6</small>
+                      </div>
                     </div>
 
                     <hr>
 
-                  <div class="form-group">
-                    <label class="text-primary font-weight-bold">Dirección</label>
-                    <textarea required type="text" name="google-maps" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps. El formato debe similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6"></textarea>
-                    <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de la función compartir de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato es similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6</small>
-                  </div>
+
 
                   <hr style="background-color: #ffff">
 

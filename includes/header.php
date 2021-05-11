@@ -21,6 +21,7 @@ require("connect.php");
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Manrope&display=swap" rel="stylesheet">
   <!--JQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="js/JQuery3.3.1.js" charset="utf-8"></script>
   <script src="js/lightslider.js" charset="utf-8"></script>
 </head>
@@ -28,12 +29,15 @@ require("connect.php");
 <body>
   <section class="menu-white">
     <div class="buscar">
-      <i class="fas fa-search"></i>
-      <input class="buscar-input" type="text" name="" value="" placeholder="BUSCAR...">
+      <button type="button" name="submit"><i class="fas fa-search"></i></button>
+      <input class="buscar-input" type="text" name="articulos_buscar" id="articulos_buscar" placeholder="BUSCAR ARTÍCULO..." autocomplete="off">
+      <div class="lista-articulos" id="listaArticulos">
+        
+      </div>
     </div>
     <div class="redes">
-      <i class="fab fa-facebook-f"></i>
-      <i class="fab fa-instagram"></i>
+      <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
     </div>
   </section>
 
