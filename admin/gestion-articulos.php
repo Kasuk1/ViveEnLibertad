@@ -125,10 +125,15 @@ require("session-check.php");
                         <small class="form-text text-muted">Ingrese el link URL de la imagen que se desglosará en la sección 1.</small>
                       </div>
 
-                      <div class="form-group">
+                      <div class="form-group col-md-12">
                         <label class="text-primary font-weight-bold">Dirección 1</label>
-                        <textarea required type="text" name="direccion1" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps. El formato debería ser similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6"></textarea>
+                        <textarea type="text" name="direccion1" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps. El formato debería ser similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6"></textarea>
                         <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de la función compartir de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato es similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6</small>
+                      </div>
+
+                      <div class="form-group col-md-12">
+                        <label class="text-primary font-weight-bold">Link de Interés 1</label>
+                        <textarea type="text" name="extralink1" rows="3" class="form-control text-justify" placeholder="Solo dirección URL permitido, de lo contrario no vinculará a ningún otro enlace externo."></textarea>
                       </div>
                     </div>
 
@@ -159,10 +164,15 @@ require("session-check.php");
                         <small class="form-text text-muted">Ingrese el link URL de la imagen que se desglosará en la sección 2.</small>
                       </div>
 
-                      <div class="form-group">
+                      <div class="form-group col-md-12">
                         <label class="text-primary font-weight-bold">Dirección 2</label>
                         <textarea type="text" name="direccion2" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps. El formato debería ser similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6"></textarea>
                         <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de la función compartir de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato es similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6</small>
+                      </div>
+
+                      <div class="form-group col-md-12">
+                        <label class="text-primary font-weight-bold">Link de Interés 2</label>
+                        <textarea type="text" name="extralink2" rows="3" class="form-control text-justify" placeholder="Solo dirección URL permitido, de lo contrario no vinculará a ningún otro enlace externo."></textarea>
                       </div>
                     </div>
 
@@ -193,12 +203,18 @@ require("session-check.php");
                         <small class="form-text text-muted">Ingrese el link URL de la imagen que se desglosará en la sección 3.</small>
                       </div>
 
-                      <div class="form-group">
+                      <div class="form-group col-md-12">
                         <label class="text-primary font-weight-bold">Dirección 3</label>
                         <textarea type="text" name="direccion3" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps. El formato debería ser similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6"></textarea>
                         <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de la función compartir de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato es similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6</small>
                       </div>
+
+                      <div class="form-group col-md-12">
+                        <label class="text-primary font-weight-bold">Link de Interés 3</label>
+                        <textarea type="text" name="extralink3" rows="3" class="form-control text-justify" placeholder="Solo dirección URL permitido, de lo contrario no vinculará a ningún otro enlace externo."></textarea>
+                      </div>
                     </div>
+
 
                     <hr>
 
@@ -227,10 +243,15 @@ require("session-check.php");
                         <small class="form-text text-muted">Ingrese el link URL de la imagen que se desglosará en la sección 4.</small>
                       </div>
 
-                      <div class="form-group">
+                      <div class="form-group col-md-12">
                         <label class="text-primary font-weight-bold">Dirección 4</label>
                         <textarea type="text" name="direccion4" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps. El formato debería ser similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6"></textarea>
                         <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de la función compartir de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato es similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6</small>
+                      </div>
+
+                      <div class="form-group col-md-12">
+                        <label class="text-primary font-weight-bold">Link de Interés 4</label>
+                        <textarea type="text" name="extralink4" rows="3" class="form-control text-justify" placeholder="Solo dirección URL permitido, de lo contrario no vinculará a ningún otro enlace externo."></textarea>
                       </div>
                     </div>
 
@@ -261,10 +282,15 @@ require("session-check.php");
                         <small class="form-text text-muted">Ingrese el link URL de la imagen que se desglosará en la sección 5.</small>
                       </div>
 
-                      <div class="form-group">
+                      <div class="form-group col-md-12">
                         <label class="text-primary font-weight-bold">Dirección 5</label>
                         <textarea type="text" name="direccion5" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps. El formato debería ser similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6"></textarea>
                         <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de la función compartir de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato es similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6</small>
+                      </div>
+
+                      <div class="form-group col-md-12">
+                        <label class="text-primary font-weight-bold">Link de Interés 5</label>
+                        <textarea type="text" name="extralink5" rows="3" class="form-control text-justify" placeholder="Solo dirección URL permitido, de lo contrario no vinculará a ningún otro enlace externo."></textarea>
                       </div>
                     </div>
 
@@ -295,10 +321,15 @@ require("session-check.php");
                         <small class="form-text text-muted">Ingrese el link URL de la imagen que se desglosará en la sección 6.</small>
                       </div>
 
-                      <div class="form-group">
+                      <div class="form-group col-md-12">
                         <label class="text-primary font-weight-bold">Dirección 6</label>
                         <textarea type="text" name="direccion6" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps. El formato debería ser similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6"></textarea>
                         <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de la función compartir de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato es similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6</small>
+                      </div>
+
+                      <div class="form-group col-md-12">
+                        <label class="text-primary font-weight-bold">Link de Interés 6</label>
+                        <textarea type="text" name="extralink6" rows="3" class="form-control text-justify" placeholder="Solo dirección URL permitido, de lo contrario no vinculará a ningún otro enlace externo."></textarea>
                       </div>
                     </div>
 
@@ -329,10 +360,15 @@ require("session-check.php");
                         <small class="form-text text-muted">Ingrese el link URL de la imagen que se desglosará en la sección 7.</small>
                       </div>
 
-                      <div class="form-group">
+                      <div class="form-group col-md-12">
                         <label class="text-primary font-weight-bold">Dirección 7</label>
                         <textarea type="text" name="direccion7" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps. El formato debería ser similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6"></textarea>
                         <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de la función compartir de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato es similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6</small>
+                      </div>
+
+                      <div class="form-group col-md-12">
+                        <label class="text-primary font-weight-bold">Link de Interés 7</label>
+                        <textarea type="text" name="extralink7" rows="3" class="form-control text-justify" placeholder="Solo dirección URL permitido, de lo contrario no vinculará a ningún otro enlace externo."></textarea>
                       </div>
                     </div>
 
@@ -363,10 +399,15 @@ require("session-check.php");
                         <small class="form-text text-muted">Ingrese el link URL de la imagen que se desglosará en la sección 8.</small>
                       </div>
 
-                      <div class="form-group">
+                      <div class="form-group col-md-12">
                         <label class="text-primary font-weight-bold">Dirección 8</label>
                         <textarea type="text" name="direccion8" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps. El formato debería ser similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6"></textarea>
                         <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de la función compartir de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato es similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6</small>
+                      </div>
+
+                      <div class="form-group col-md-12">
+                        <label class="text-primary font-weight-bold">Link de Interés 8</label>
+                        <textarea type="text" name="extralink8" rows="3" class="form-control text-justify" placeholder="Solo dirección URL permitido, de lo contrario no vinculará a ningún otro enlace externo."></textarea>
                       </div>
                     </div>
 
@@ -397,10 +438,15 @@ require("session-check.php");
                         <small class="form-text text-muted">Ingrese el link URL de la imagen que se desglosará en la sección 9.</small>
                       </div>
 
-                      <div class="form-group">
+                      <div class="form-group col-md-12">
                         <label class="text-primary font-weight-bold">Dirección 9</label>
                         <textarea type="text" name="direccion9" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps. El formato debería ser similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6"></textarea>
                         <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de la función compartir de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato es similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6</small>
+                      </div>
+
+                      <div class="form-group col-md-12">
+                        <label class="text-primary font-weight-bold">Link de Interés 9</label>
+                        <textarea type="text" name="extralink9" rows="3" class="form-control text-justify" placeholder="Solo dirección URL permitido, de lo contrario no vinculará a ningún otro enlace externo."></textarea>
                       </div>
                     </div>
 
@@ -431,10 +477,15 @@ require("session-check.php");
                         <small class="form-text text-muted">Ingrese el link URL de la imagen que se desglosará en la sección 10.</small>
                       </div>
 
-                      <div class="form-group">
+                      <div class="form-group col-md-12">
                         <label class="text-primary font-weight-bold">Dirección 10</label>
                         <textarea type="text" name="direccion10" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps. El formato debería ser similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6"></textarea>
                         <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de la función compartir de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato es similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6</small>
+                      </div>
+
+                      <div class="form-group col-md-12">
+                        <label class="text-primary font-weight-bold">Link de Interés 10</label>
+                        <textarea type="text" name="extralink10" rows="3" class="form-control text-justify" placeholder="Solo dirección URL permitido, de lo contrario no vinculará a ningún otro enlace externo."></textarea>
                       </div>
                     </div>
 
