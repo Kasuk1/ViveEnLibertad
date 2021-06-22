@@ -24,6 +24,12 @@ if(isset($_POST['publicar_comentario'])){
   $comentarioEmail = $_POST['comentarioEmail'];
   $comentarioContenido = $_POST['comentarioContenido'];
 
+  /*Notificacion Electrónica Atributos Definición */
+  $email = "viveenlibertadpe@gmail.com";
+  $asunto = "Notificación Electrónica ViveEnLibertad - Nuevo Mensaje Agregado";
+  $mensaje = "Nombre de Usuario: $comentarioNombre \nCorreo Electrónico: $comentarioEmail \nComentario: $comentarioContenido \nID de Artículo: $idArticulo. \nEste correo es una notificación automática, porfavor no responderlo.";
+
+
   $query = "INSERT INTO comentarios (id_articulo,
                                     nombre,
                                     email,
@@ -35,9 +41,13 @@ if(isset($_POST['publicar_comentario'])){
 
   $query_run = mysqli_query($conexion, $query);
 
+
   if($query_run)
   {
-    echo '<script type="text/javascript"> alert("Su comentario ha sido registrado. Muchas gracias! :) "); window.location = "index.php"; </script>';
+    $mail = mail($email,$asunto,$mensaje);
+    if($mail) {
+      echo '<script type="text/javascript"> alert("Su comentario ha sido registrado. Muchas gracias! :) "); window.location = "index.php"; </script>';
+    }
   }
   else
   {

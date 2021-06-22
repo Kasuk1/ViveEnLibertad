@@ -40,16 +40,16 @@ require("session-check.php");
 
 
                     $query = "SELECT a.id_articulo, a.id_categoria, c.nombre_categoria, a.nombre_articulo, a.titulo,
-                                      a.desc_subtitulo1, a.etiqueta1, a.descripcion1, a.imagen1, a.direccion1,
-                                      a.desc_subtitulo2, a.etiqueta2, a.descripcion2, a.imagen2, a.direccion2,
-                                      a.desc_subtitulo3, a.etiqueta3, a.descripcion3, a.imagen3, a.direccion3,
-                                      a.desc_subtitulo4, a.etiqueta4, a.descripcion4, a.imagen4, a.direccion4,
-                                      a.desc_subtitulo5, a.etiqueta5, a.descripcion5, a.imagen5, a.direccion5,
-                                      a.desc_subtitulo6, a.etiqueta6, a.descripcion6, a.imagen6, a.direccion6,
-                                      a.desc_subtitulo7, a.etiqueta7, a.descripcion7, a.imagen7, a.direccion7,
-                                      a.desc_subtitulo8, a.etiqueta8, a.descripcion8, a.imagen8, a.direccion8,
-                                      a.desc_subtitulo9, a.etiqueta9, a.descripcion9, a.imagen9, a.direccion9,
-                                      a.desc_subtitulo10, a.etiqueta10, a.descripcion10, a.imagen10, a.direccion10,
+                                      a.desc_subtitulo1, a.etiqueta1, a.descripcion1, a.imagen1, a.direccion1, a.extra_link1,
+                                      a.desc_subtitulo2, a.etiqueta2, a.descripcion2, a.imagen2, a.direccion2, a.extra_link2,
+                                      a.desc_subtitulo3, a.etiqueta3, a.descripcion3, a.imagen3, a.direccion3, a.extra_link3,
+                                      a.desc_subtitulo4, a.etiqueta4, a.descripcion4, a.imagen4, a.direccion4, a.extra_link4,
+                                      a.desc_subtitulo5, a.etiqueta5, a.descripcion5, a.imagen5, a.direccion5, a.extra_link5,
+                                      a.desc_subtitulo6, a.etiqueta6, a.descripcion6, a.imagen6, a.direccion6, a.extra_link6,
+                                      a.desc_subtitulo7, a.etiqueta7, a.descripcion7, a.imagen7, a.direccion7, a.extra_link7,
+                                      a.desc_subtitulo8, a.etiqueta8, a.descripcion8, a.imagen8, a.direccion8, a.extra_link8,
+                                      a.desc_subtitulo9, a.etiqueta9, a.descripcion9, a.imagen9, a.direccion9, a.extra_link9,
+                                      a.desc_subtitulo10, a.etiqueta10, a.descripcion10, a.imagen10, a.direccion10, a.extra_link10,
                                       a.imagen
                     FROM articulos a INNER JOIN categorias c on a.id_categoria = c.id_categoria WHERE a.id_articulo = $id_articulo
                     ORDER BY a.id_articulo;";
@@ -139,10 +139,16 @@ require("session-check.php");
                             <small class="form-text text-muted">Ingrese el link URL de la imagen que se desglosará en la sección 1.</small>
                           </div>
 
-                          <div class="form-group">
-                            <label class="text-primary font-weight-bold">Dirección1</label>
-                            <textarea required type="text" name="edit_direccion1" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps"><?php echo $row['direccion1'] ?></textarea>
+                          <div class="form-group col-md-12">
+                            <label class="text-primary font-weight-bold">Dirección 1</label>
+                            <textarea type="text" name="edit_direccion1" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps"><?php echo $row['direccion1'] ?></textarea>
                             <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato es similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6</small>
+                          </div>
+
+                          <div class="form-group col-md-12">
+                            <label class="text-primary font-weight-bold">Link de Interés 1</label>
+                            <textarea  type="text" name="edit_extralink1" rows="3" class="form-control text-justify"><?php echo $row['extra_link1'] ?></textarea>
+                            <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de una página web, de lo contrario no se desplegará correctamente en la página para el usuario.</small>
                           </div>
                         </div>
 
@@ -172,10 +178,16 @@ require("session-check.php");
                             <small class="form-text text-muted">Ingrese el link URL de la imagen que se desglosará en la sección 2.</small>
                           </div>
 
-                          <div class="form-group">
-                            <label class="text-primary font-weight-bold">Dirección2</label>
+                          <div class="form-group col-md-12">
+                            <label class="text-primary font-weight-bold">Dirección 2</label>
                             <textarea type="text" name="edit_direccion2" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps"><?php echo $row['direccion2'] ?></textarea>
                             <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato es similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6</small>
+                          </div>
+
+                          <div class="form-group col-md-12">
+                            <label class="text-primary font-weight-bold">Link de Interés 2</label>
+                            <textarea  type="text" name="edit_extralink2" rows="3" class="form-control text-justify"><?php echo $row['extra_link2'] ?></textarea>
+                            <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de una página web, de lo contrario no se desplegará correctamente en la página para el usuario.</small>
                           </div>
                         </div>
 
@@ -205,10 +217,16 @@ require("session-check.php");
                             <small class="form-text text-muted">Ingrese el link URL de la imagen que se desglosará en la sección 3.</small>
                           </div>
 
-                          <div class="form-group">
-                            <label class="text-primary font-weight-bold">Dirección3</label>
+                          <div class="form-group col-md-12">
+                            <label class="text-primary font-weight-bold">Dirección 3</label>
                             <textarea type="text" name="edit_direccion3" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps"><?php echo $row['direccion3'] ?></textarea>
                             <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato es similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6</small>
+                          </div>
+
+                          <div class="form-group col-md-12">
+                            <label class="text-primary font-weight-bold">Link de Interés 3</label>
+                            <textarea  type="text" name="edit_extralink3" rows="3" class="form-control text-justify"><?php echo $row['extra_link3'] ?></textarea>
+                            <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de una página web, de lo contrario no se desplegará correctamente en la página para el usuario.</small>
                           </div>
                         </div>
 
@@ -238,10 +256,16 @@ require("session-check.php");
                             <small class="form-text text-muted">Ingrese el link URL de la imagen que se desglosará en la sección 4.</small>
                           </div>
 
-                          <div class="form-group">
-                            <label class="text-primary font-weight-bold">Dirección4</label>
+                          <div class="form-group col-md-12">
+                            <label class="text-primary font-weight-bold">Dirección 4</label>
                             <textarea type="text" name="edit_direccion4" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps"><?php echo $row['direccion4'] ?></textarea>
                             <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato es similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6</small>
+                          </div>
+
+                          <div class="form-group col-md-12">
+                            <label class="text-primary font-weight-bold">Link de Interés 4</label>
+                            <textarea  type="text" name="edit_extralink4" rows="3" class="form-control text-justify"><?php echo $row['extra_link4'] ?></textarea>
+                            <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de una página web, de lo contrario no se desplegará correctamente en la página para el usuario.</small>
                           </div>
                         </div>
 
@@ -271,10 +295,16 @@ require("session-check.php");
                             <small class="form-text text-muted">Ingrese el link URL de la imagen que se desglosará en la sección 5.</small>
                           </div>
 
-                          <div class="form-group">
-                            <label class="text-primary font-weight-bold">Dirección5</label>
+                          <div class="form-group col-md-12">
+                            <label class="text-primary font-weight-bold">Dirección 5</label>
                             <textarea type="text" name="edit_direccion5" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps"><?php echo $row['direccion5'] ?></textarea>
                             <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato es similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6</small>
+                          </div>
+
+                          <div class="form-group col-md-12">
+                            <label class="text-primary font-weight-bold">Link de Interés 5</label>
+                            <textarea  type="text" name="edit_extralink5" rows="3" class="form-control text-justify"><?php echo $row['extra_link5'] ?></textarea>
+                            <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de una página web, de lo contrario no se desplegará correctamente en la página para el usuario.</small>
                           </div>
                         </div>
 
@@ -304,10 +334,16 @@ require("session-check.php");
                             <small class="form-text text-muted">Ingrese el link URL de la imagen que se desglosará en la sección 6.</small>
                           </div>
 
-                          <div class="form-group">
-                            <label class="text-primary font-weight-bold">Dirección6</label>
+                          <div class="form-group col-md-12">
+                            <label class="text-primary font-weight-bold">Dirección 6</label>
                             <textarea type="text" name="edit_direccion6" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps"><?php echo $row['direccion6'] ?></textarea>
                             <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato es similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6</small>
+                          </div>
+
+                          <div class="form-group col-md-12">
+                            <label class="text-primary font-weight-bold">Link de Interés 6</label>
+                            <textarea  type="text" name="edit_extralink6" rows="3" class="form-control text-justify"><?php echo $row['extra_link6'] ?></textarea>
+                            <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de una página web, de lo contrario no se desplegará correctamente en la página para el usuario.</small>
                           </div>
                         </div>
 
@@ -337,10 +373,16 @@ require("session-check.php");
                             <small class="form-text text-muted">Ingrese el link URL de la imagen que se desglosará en la sección 7.</small>
                           </div>
 
-                          <div class="form-group">
-                            <label class="text-primary font-weight-bold">Dirección7</label>
+                          <div class="form-group col-md-12">
+                            <label class="text-primary font-weight-bold">Dirección 7</label>
                             <textarea type="text" name="edit_direccion7" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps"><?php echo $row['direccion7'] ?></textarea>
                             <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato es similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6</small>
+                          </div>
+
+                          <div class="form-group col-md-12">
+                            <label class="text-primary font-weight-bold">Link de Interés 7</label>
+                            <textarea  type="text" name="edit_extralink7" rows="3" class="form-control text-justify"><?php echo $row['extra_link7'] ?></textarea>
+                            <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de una página web, de lo contrario no se desplegará correctamente en la página para el usuario.</small>
                           </div>
                         </div>
 
@@ -370,10 +412,16 @@ require("session-check.php");
                             <small class="form-text text-muted">Ingrese el link URL de la imagen que se desglosará en la sección 8.</small>
                           </div>
 
-                          <div class="form-group">
-                            <label class="text-primary font-weight-bold">Dirección8</label>
+                          <div class="form-group col-md-12">
+                            <label class="text-primary font-weight-bold">Dirección 8</label>
                             <textarea type="text" name="edit_direccion8" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps"><?php echo $row['direccion8'] ?></textarea>
                             <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato es similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6</small>
+                          </div>
+
+                          <div class="form-group col-md-12">
+                            <label class="text-primary font-weight-bold">Link de Interés 8</label>
+                            <textarea  type="text" name="edit_extralink8" rows="3" class="form-control text-justify"><?php echo $row['extra_link8'] ?></textarea>
+                            <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de una página web, de lo contrario no se desplegará correctamente en la página para el usuario.</small>
                           </div>
                         </div>
 
@@ -403,10 +451,16 @@ require("session-check.php");
                             <small class="form-text text-muted">Ingrese el link URL de la imagen que se desglosará en la sección 9.</small>
                           </div>
 
-                          <div class="form-group">
-                            <label class="text-primary font-weight-bold">Dirección9</label>
+                          <div class="form-group col-md-12">
+                            <label class="text-primary font-weight-bold">Dirección 9</label>
                             <textarea type="text" name="edit_direccion9" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps"><?php echo $row['direccion9'] ?></textarea>
                             <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato es similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6</small>
+                          </div>
+
+                          <div class="form-group col-md-12">
+                            <label class="text-primary font-weight-bold">Link de Interés 9</label>
+                            <textarea  type="text" name="edit_extralink9" rows="3" class="form-control text-justify"><?php echo $row['extra_link9'] ?></textarea>
+                            <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de una página web, de lo contrario no se desplegará correctamente en la página para el usuario.</small>
                           </div>
                         </div>
 
@@ -436,10 +490,16 @@ require("session-check.php");
                             <small class="form-text text-muted">Ingrese el link URL de la imagen que se desglosará en la sección 10.</small>
                           </div>
 
-                          <div class="form-group">
-                            <label class="text-primary font-weight-bold">Dirección10</label>
+                          <div class="form-group col-md-12">
+                            <label class="text-primary font-weight-bold">Dirección 10</label>
                             <textarea type="text" name="edit_direccion10" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps"><?php echo $row['direccion10'] ?></textarea>
                             <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato es similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6</small>
+                          </div>
+
+                          <div class="form-group col-md-12">
+                            <label class="text-primary font-weight-bold">Link de Interés 10</label>
+                            <textarea  type="text" name="edit_extralink10" rows="3" class="form-control text-justify"><?php echo $row['extra_link10'] ?></textarea>
+                            <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de una página web, de lo contrario no se desplegará correctamente en la página para el usuario.</small>
                           </div>
                         </div>
 
