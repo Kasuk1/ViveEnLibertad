@@ -23,8 +23,8 @@
         <div class="list-footer">
           <h3>REDES SOCIALES</h3>
           <ul>
-            <a href="#" target="_blank"><li>Facebook</li></a>
-            <a href="#" target="_blank"><li>Instagram</li></a>
+            <a href="https://www.facebook.com/viveenlibertad.pe" target="_blank"><li>Facebook</li></a>
+            <a href="https://www.instagram.com/viveenlibertad.pe" target="_blank"><li>Instagram</li></a>
           </ul>
         </div>
       </div>

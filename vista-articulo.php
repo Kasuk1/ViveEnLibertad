@@ -59,8 +59,8 @@ require("connect.php");
       </div>
     </div>
     <div class="redes">
-      <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-      <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/viveenlibertad.pe" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/viveenlibertad.pe" target="_blank"><i class="fab fa-instagram"></i></a>
     </div>
   </section>
 
@@ -120,8 +120,8 @@ require("connect.php");
       <p> <?php echo $row['descripcion1'] ?> </p>
       <button class="descripcion-imagenes-button" type="button" name="button">MÁS INFO</button>
       <ul class="mas-info">
-        <a href="<?php echo $row['direccion1'] ?>" target="_blank"><li><i class="fas fa-external-link-alt icon"></i>ABRIR EN GOOGLE MAPS</li></a>
-        <a href="#"><li><i class="fas fa-map-marker-alt icon"></i>DIRECCIÓN</li></a>
+        <a href="<?php echo $row['maps1'] ?>" target="_blank"><li><i class="fas fa-external-link-alt icon"></i>ABRIR EN GOOGLE MAPS</li></a>
+        <a><li><i class="fas fa-map-marker-alt icon"></i><?php echo $row['direccion1'] ?></li></a>
         <a href="<?php echo $row['extra_link1'] ?>" target="_blank"><li><i class="fas fa-link icon"></i>VER LINK DE INTERÉS</li></a>
       </ul>
     </div>
@@ -156,8 +156,8 @@ require("connect.php");
       <p> <?php echo $row['descripcion2'] ?> </p>
       <button class="descripcion-imagenes-button" type="button" name="button">MÁS INFO</button>
       <ul class="mas-info">
-        <a href="<?php echo $row['direccion2'] ?>" target="_blank"><li><i class="fas fa-external-link-alt icon"></i>ABRIR EN GOOGLE MAPS</li></a>
-        <a href="#"><li><i class="fas fa-map-marker-alt icon"></i>DIRECCIÓN</li></a>
+        <a href="<?php echo $row['maps2'] ?>" target="_blank"><li><i class="fas fa-external-link-alt icon"></i>ABRIR EN GOOGLE MAPS</li></a>
+        <a><li><i class="fas fa-map-marker-alt icon"></i><?php echo $row['direccion2'] ?></li></a>
         <a href="<?php echo $row['extra_link2'] ?>" target="_blank"><li><i class="fas fa-link icon"></i>VER LINK DE INTERÉS</li></a>
       </ul>
     </div>
@@ -191,8 +191,8 @@ require("connect.php");
       <p> <?php echo $row['descripcion3'] ?> </p>
       <button class="descripcion-imagenes-button" type="button" name="button">MÁS INFO</button>
       <ul class="mas-info">
-        <a href="<?php echo $row['direccion3'] ?>" target="_blank"><li><i class="fas fa-external-link-alt icon"></i>ABRIR EN GOOGLE MAPS</li></a>
-        <a href="#"><li><i class="fas fa-map-marker-alt icon"></i>DIRECCIÓN</li></a>
+        <a href="<?php echo $row['masp3'] ?>" target="_blank"><li><i class="fas fa-external-link-alt icon"></i>ABRIR EN GOOGLE MAPS</li></a>
+        <a><li><i class="fas fa-map-marker-alt icon"></i><?php echo $row['direccion3'] ?></li></a>
         <a href="<?php echo $row['extra_link3'] ?>" target="_blank"><li><i class="fas fa-link icon"></i>VER LINK DE INTERÉS</li></a>
       </ul>
     </div>
@@ -226,8 +226,8 @@ require("connect.php");
       <p> <?php echo $row['descripcion4'] ?> </p>
       <button class="descripcion-imagenes-button" type="button" name="button">MÁS INFO</button>
       <ul class="mas-info">
-        <a href="<?php echo $row['direccion4'] ?>" target="_blank"><li><i class="fas fa-external-link-alt icon"></i>ABRIR EN GOOGLE MAPS</li></a>
-        <a href="#"><li><i class="fas fa-map-marker-alt icon"></i>DIRECCIÓN</li></a>
+        <a href="<?php echo $row['maps4'] ?>" target="_blank"><li><i class="fas fa-external-link-alt icon"></i>ABRIR EN GOOGLE MAPS</li></a>
+        <a><li><i class="fas fa-map-marker-alt icon"></i><?php echo $row['direccion4'] ?></li></a>
         <a href="<?php echo $row['extra_link4'] ?>" target="_blank"><li><i class="fas fa-link icon"></i>VER LINK DE INTERÉS</li></a>
       </ul>
     </div>
@@ -261,8 +261,8 @@ require("connect.php");
       <p> <?php echo $row['descripcion5'] ?> </p>
       <button class="descripcion-imagenes-button" type="button" name="button">MÁS INFO</button>
       <ul class="mas-info">
-        <a href="<?php echo $row['direccion5'] ?>" target="_blank"><li><i class="fas fa-external-link-alt icon"></i>ABRIR EN GOOGLE MAPS</li></a>
-        <a href="#"><li><i class="fas fa-map-marker-alt icon"></i>DIRECCIÓN</li></a>
+        <a href="<?php echo $row['maps5'] ?>" target="_blank"><li><i class="fas fa-external-link-alt icon"></i>ABRIR EN GOOGLE MAPS</li></a>
+        <a><li><i class="fas fa-map-marker-alt icon"></i><?php echo $row['direccion5'] ?></li></a>
         <a href="<?php echo $row['extra_link5'] ?>" target="_blank"><li><i class="fas fa-link icon"></i>VER LINK DE INTERÉS</li></a>
       </ul>
     </div>
@@ -296,8 +296,8 @@ require("connect.php");
       <p> <?php echo $row['descripcion6'] ?> </p>
       <button class="descripcion-imagenes-button" type="button" name="button">MÁS INFO</button>
       <ul class="mas-info">
-        <a href="<?php echo $row['direccion6'] ?>" target="_blank"><li><i class="fas fa-external-link-alt icon"></i>ABRIR EN GOOGLE MAPS</li></a>
-        <a href="#"><li><i class="fas fa-map-marker-alt icon"></i>DIRECCIÓN</li></a>
+        <a href="<?php echo $row['maps6'] ?>" target="_blank"><li><i class="fas fa-external-link-alt icon"></i>ABRIR EN GOOGLE MAPS</li></a>
+        <a><li><i class="fas fa-map-marker-alt icon"></i><?php echo $row['direccion6'] ?></li></a>
         <a href="<?php echo $row['extra_link6'] ?>" target="_blank"><li><i class="fas fa-link icon"></i>VER LINK DE INTERÉS</li></a>
       </ul>
     </div>
@@ -331,8 +331,8 @@ require("connect.php");
       <p> <?php echo $row['descripcion7'] ?> </p>
       <button class="descripcion-imagenes-button" type="button" name="button">MÁS INFO</button>
       <ul class="mas-info">
-        <a href="<?php echo $row['direccion7'] ?>" target="_blank"><li><i class="fas fa-external-link-alt icon"></i>ABRIR EN GOOGLE MAPS</li></a>
-        <a href="#"><li><i class="fas fa-map-marker-alt icon"></i>DIRECCIÓN</li></a>
+        <a href="<?php echo $row['maps7'] ?>" target="_blank"><li><i class="fas fa-external-link-alt icon"></i>ABRIR EN GOOGLE MAPS</li></a>
+        <a><li><i class="fas fa-map-marker-alt icon"></i><?php echo $row['direccion7'] ?></li></a>
         <a href="<?php echo $row['extra_link7'] ?>" target="_blank"><li><i class="fas fa-link icon"></i>VER LINK DE INTERÉS</li></a>
       </ul>
     </div>
@@ -366,8 +366,8 @@ require("connect.php");
       <p> <?php echo $row['descripcion8'] ?> </p>
       <button class="descripcion-imagenes-button" type="button" name="button">MÁS INFO</button>
       <ul class="mas-info">
-        <a href="<?php echo $row['direccion8'] ?>" target="_blank"><li><i class="fas fa-external-link-alt icon"></i>ABRIR EN GOOGLE MAPS</li></a>
-        <a href="#"><li><i class="fas fa-map-marker-alt icon"></i>DIRECCIÓN</li></a>
+        <a href="<?php echo $row['maps8'] ?>" target="_blank"><li><i class="fas fa-external-link-alt icon"></i>ABRIR EN GOOGLE MAPS</li></a>
+        <a><li><i class="fas fa-map-marker-alt icon"></i><?php echo $row['direccion8'] ?></li></a>
         <a href="<?php echo $row['extra_link8'] ?>" target="_blank"><li><i class="fas fa-link icon"></i>VER LINK DE INTERÉS</li></a>
       </ul>
     </div>
@@ -401,8 +401,8 @@ require("connect.php");
       <p> <?php echo $row['descripcion9'] ?> </p>
       <button class="descripcion-imagenes-button" type="button" name="button">MÁS INFO</button>
       <ul class="mas-info">
-        <a href="<?php echo $row['direccion9'] ?>" target="_blank"><li><i class="fas fa-external-link-alt icon"></i>ABRIR EN GOOGLE MAPS</li></a>
-        <a href="#"><li><i class="fas fa-map-marker-alt icon"></i>DIRECCIÓN</li></a>
+        <a href="<?php echo $row['maps9'] ?>" target="_blank"><li><i class="fas fa-external-link-alt icon"></i>ABRIR EN GOOGLE MAPS</li></a>
+        <a><li><i class="fas fa-map-marker-alt icon"></i><?php echo $row['direccion9'] ?></li></a>
         <a href="<?php echo $row['extra_link9'] ?>" target="_blank"><li><i class="fas fa-link icon"></i>VER LINK DE INTERÉS</li></a>
       </ul>
     </div>
@@ -417,7 +417,7 @@ require("connect.php");
     <?php
       $id_articulo_select = $_GET['id_articulo_select'];
 
-      $query = "SELECT desc_subtitulo10, etiqueta10, descripcion10, imagen10 FROM articulos WHERE id_articulo = $id_articulo_select";
+      $query = "SELECT * FROM articulos WHERE id_articulo = $id_articulo_select";
       $query_run = mysqli_query($conexion, $query);
       $query_check = mysqli_num_rows($query_run);
 
@@ -436,8 +436,8 @@ require("connect.php");
       <p> <?php echo $row['descripcion10'] ?> </p>
       <button class="descripcion-imagenes-button" type="button" name="button">MÁS INFO</button>
       <ul class="mas-info">
-        <a href="<?php echo $row['direccion10'] ?>" target="_blank"><li><i class="fas fa-external-link-alt icon"></i>ABRIR EN GOOGLE MAPS</li></a>
-        <a href="#"><li><i class="fas fa-map-marker-alt icon"></i>DIRECCIÓN</li></a>
+        <a href="<?php echo $row['maps10'] ?>" target="_blank"><li><i class="fas fa-external-link-alt icon"></i>ABRIR EN GOOGLE MAPS</li></a>
+        <a><li><i class="fas fa-map-marker-alt icon"></i><?php echo $row['direccion10'] ?></li></a>
         <a href="<?php echo $row['extra_link10'] ?>" target="_blank"><li><i class="fas fa-link icon"></i>VER LINK DE INTERÉS</li></a>
       </ul>
     </div>

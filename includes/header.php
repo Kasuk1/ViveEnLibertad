@@ -32,12 +32,12 @@ require("connect.php");
       <button type="button" name="submit"><i class="fas fa-search"></i></button>
       <input class="buscar-input" type="text" name="articulos_buscar" id="articulos_buscar" placeholder="BUSCAR ARTÍCULO..." autocomplete="off">
       <div class="lista-articulos" id="listaArticulos">
-        
+
       </div>
     </div>
     <div class="redes">
-      <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-      <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/viveenlibertad.pe" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/viveenlibertad.pe/" target="_blank"><i class="fab fa-instagram"></i></a>
     </div>
   </section>
 

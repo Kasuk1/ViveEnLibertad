@@ -126,9 +126,15 @@ require("session-check.php");
                       </div>
 
                       <div class="form-group col-md-12">
-                        <label class="text-primary font-weight-bold">Dirección 1</label>
-                        <textarea type="text" name="direccion1" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps. El formato debería ser similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6"></textarea>
+                        <label class="text-primary font-weight-bold">Dirección en Google Maps 1</label>
+                        <textarea type="text" name="maps1" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps. El formato debería ser similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6"></textarea>
                         <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de la función compartir de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato es similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6</small>
+                      </div>
+
+                      <div class="form-group col-md-12">
+                        <label class="text-primary font-weight-bold">Dirección Escrita 1</label>
+                        <input type="text" name="direccion1" class="form-control text-justify" placeholder="Dirección Escrita. EL formato debe ser similar a este: Av. Nacionalismo 240."></textarea>
+                        <small class="form-text text-muted">Debe ingresar una dirección válida y no mucho texto </small>
                       </div>
 
                       <div class="form-group col-md-12">
@@ -165,9 +171,15 @@ require("session-check.php");
                       </div>
 
                       <div class="form-group col-md-12">
-                        <label class="text-primary font-weight-bold">Dirección 2</label>
-                        <textarea type="text" name="direccion2" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps. El formato debería ser similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6"></textarea>
+                        <label class="text-primary font-weight-bold">Dirección en Google Maps 2</label>
+                        <textarea type="text" name="maps2" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps. El formato debería ser similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6"></textarea>
                         <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de la función compartir de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato es similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6</small>
+                      </div>
+
+                      <div class="form-group col-md-12">
+                        <label class="text-primary font-weight-bold">Dirección Escrita 2</label>
+                        <input type="text" name="direccion2" class="form-control text-justify" placeholder="Dirección Escrita. EL formato debe ser similar a este: Av. Nacionalismo 240."></textarea>
+                        <small class="form-text text-muted">Debe ingresar una dirección válida y no mucho texto </small>
                       </div>
 
                       <div class="form-group col-md-12">
@@ -204,9 +216,15 @@ require("session-check.php");
                       </div>
 
                       <div class="form-group col-md-12">
-                        <label class="text-primary font-weight-bold">Dirección 3</label>
-                        <textarea type="text" name="direccion3" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps. El formato debería ser similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6"></textarea>
+                        <label class="text-primary font-weight-bold">Dirección en Google Maps 3</label>
+                        <textarea type="text" name="maps3" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps. El formato debería ser similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6"></textarea>
                         <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de la función compartir de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato es similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6</small>
+                      </div>
+
+                      <div class="form-group col-md-12">
+                        <label class="text-primary font-weight-bold">Dirección Escrita 3</label>
+                        <input type="text" name="direccion3" class="form-control text-justify" placeholder="Dirección Escrita. EL formato debe ser similar a este: Av. Nacionalismo 240."></textarea>
+                        <small class="form-text text-muted">Debe ingresar una dirección válida y no mucho texto </small>
                       </div>
 
                       <div class="form-group col-md-12">
@@ -244,9 +262,15 @@ require("session-check.php");
                       </div>
 
                       <div class="form-group col-md-12">
-                        <label class="text-primary font-weight-bold">Dirección 4</label>
-                        <textarea type="text" name="direccion4" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps. El formato debería ser similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6"></textarea>
+                        <label class="text-primary font-weight-bold">Dirección en Google Maps 4</label>
+                        <textarea type="text" name="maps4" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps. El formato debería ser similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6"></textarea>
                         <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de la función compartir de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato es similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6</small>
+                      </div>
+
+                      <div class="form-group col-md-12">
+                        <label class="text-primary font-weight-bold">Dirección Escrita 4</label>
+                        <input type="text" name="direccion4" class="form-control text-justify" placeholder="Dirección Escrita. EL formato debe ser similar a este: Av. Nacionalismo 240."></textarea>
+                        <small class="form-text text-muted">Debe ingresar una dirección válida y no mucho texto </small>
                       </div>
 
                       <div class="form-group col-md-12">
@@ -283,9 +307,15 @@ require("session-check.php");
                       </div>
 
                       <div class="form-group col-md-12">
-                        <label class="text-primary font-weight-bold">Dirección 5</label>
-                        <textarea type="text" name="direccion5" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps. El formato debería ser similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6"></textarea>
+                        <label class="text-primary font-weight-bold">Dirección en Google Maps 5</label>
+                        <textarea type="text" name="maps5" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps. El formato debería ser similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6"></textarea>
                         <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de la función compartir de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato es similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6</small>
+                      </div>
+
+                      <div class="form-group col-md-12">
+                        <label class="text-primary font-weight-bold">Dirección Escrita 5</label>
+                        <input type="text" name="direccion5" class="form-control text-justify" placeholder="Dirección Escrita. EL formato debe ser similar a este: Av. Nacionalismo 240."></textarea>
+                        <small class="form-text text-muted">Debe ingresar una dirección válida y no mucho texto </small>
                       </div>
 
                       <div class="form-group col-md-12">
@@ -322,9 +352,15 @@ require("session-check.php");
                       </div>
 
                       <div class="form-group col-md-12">
-                        <label class="text-primary font-weight-bold">Dirección 6</label>
-                        <textarea type="text" name="direccion6" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps. El formato debería ser similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6"></textarea>
+                        <label class="text-primary font-weight-bold">Dirección en Google Maps 6</label>
+                        <textarea type="text" name="maps6" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps. El formato debería ser similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6"></textarea>
                         <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de la función compartir de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato es similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6</small>
+                      </div>
+
+                      <div class="form-group col-md-12">
+                        <label class="text-primary font-weight-bold">Dirección Escrita 6</label>
+                        <input type="text" name="direccion6" class="form-control text-justify" placeholder="Dirección Escrita. EL formato debe ser similar a este: Av. Nacionalismo 240."></textarea>
+                        <small class="form-text text-muted">Debe ingresar una dirección válida y no mucho texto </small>
                       </div>
 
                       <div class="form-group col-md-12">
@@ -361,9 +397,15 @@ require("session-check.php");
                       </div>
 
                       <div class="form-group col-md-12">
-                        <label class="text-primary font-weight-bold">Dirección 7</label>
-                        <textarea type="text" name="direccion7" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps. El formato debería ser similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6"></textarea>
+                        <label class="text-primary font-weight-bold">Dirección en Google Maps 7</label>
+                        <textarea type="text" name="maps7" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps. El formato debería ser similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6"></textarea>
                         <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de la función compartir de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato es similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6</small>
+                      </div>
+
+                      <div class="form-group col-md-12">
+                        <label class="text-primary font-weight-bold">Dirección Escrita 7</label>
+                        <input type="text" name="direccion7" class="form-control text-justify" placeholder="Dirección Escrita. EL formato debe ser similar a este: Av. Nacionalismo 240."></textarea>
+                        <small class="form-text text-muted">Debe ingresar una dirección válida y no mucho texto </small>
                       </div>
 
                       <div class="form-group col-md-12">
@@ -400,9 +442,15 @@ require("session-check.php");
                       </div>
 
                       <div class="form-group col-md-12">
-                        <label class="text-primary font-weight-bold">Dirección 8</label>
-                        <textarea type="text" name="direccion8" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps. El formato debería ser similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6"></textarea>
+                        <label class="text-primary font-weight-bold">Dirección en Google Maps 8</label>
+                        <textarea type="text" name="maps8" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps. El formato debería ser similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6"></textarea>
                         <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de la función compartir de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato es similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6</small>
+                      </div>
+
+                      <div class="form-group col-md-12">
+                        <label class="text-primary font-weight-bold">Dirección Escrita 8</label>
+                        <input type="text" name="direccion8" class="form-control text-justify" placeholder="Dirección Escrita. EL formato debe ser similar a este: Av. Nacionalismo 240."></textarea>
+                        <small class="form-text text-muted">Debe ingresar una dirección válida y no mucho texto </small>
                       </div>
 
                       <div class="form-group col-md-12">
@@ -439,9 +487,15 @@ require("session-check.php");
                       </div>
 
                       <div class="form-group col-md-12">
-                        <label class="text-primary font-weight-bold">Dirección 9</label>
-                        <textarea type="text" name="direccion9" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps. El formato debería ser similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6"></textarea>
+                        <label class="text-primary font-weight-bold">Dirección en Google Maps 9</label>
+                        <textarea type="text" name="maps9" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps. El formato debería ser similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6"></textarea>
                         <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de la función compartir de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato es similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6</small>
+                      </div>
+
+                      <div class="form-group col-md-12">
+                        <label class="text-primary font-weight-bold">Dirección Escrita 9</label>
+                        <input type="text" name="direccion9" class="form-control text-justify" placeholder="Dirección Escrita. EL formato debe ser similar a este: Av. Nacionalismo 240."></textarea>
+                        <small class="form-text text-muted">Debe ingresar una dirección válida y no mucho texto </small>
                       </div>
 
                       <div class="form-group col-md-12">
@@ -478,9 +532,15 @@ require("session-check.php");
                       </div>
 
                       <div class="form-group col-md-12">
-                        <label class="text-primary font-weight-bold">Dirección 10</label>
-                        <textarea type="text" name="direccion10" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps. El formato debería ser similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6"></textarea>
+                        <label class="text-primary font-weight-bold">Dirección en Google Maps 10</label>
+                        <textarea type="text" name="maps10" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps. El formato debería ser similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6"></textarea>
                         <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de la función compartir de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato es similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6</small>
+                      </div>
+
+                      <div class="form-group col-md-12">
+                        <label class="text-primary font-weight-bold">Dirección Escrita 10</label>
+                        <input type="text" name="direccion10" class="form-control text-justify" placeholder="Dirección Escrita. EL formato debe ser similar a este: Av. Nacionalismo 240."></textarea>
+                        <small class="form-text text-muted">Debe ingresar una dirección válida y no mucho texto </small>
                       </div>
 
                       <div class="form-group col-md-12">

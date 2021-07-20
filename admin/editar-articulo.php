@@ -40,16 +40,16 @@ require("session-check.php");
 
 
                     $query = "SELECT a.id_articulo, a.id_categoria, c.nombre_categoria, a.nombre_articulo, a.titulo,
-                                      a.desc_subtitulo1, a.etiqueta1, a.descripcion1, a.imagen1, a.direccion1, a.extra_link1,
-                                      a.desc_subtitulo2, a.etiqueta2, a.descripcion2, a.imagen2, a.direccion2, a.extra_link2,
-                                      a.desc_subtitulo3, a.etiqueta3, a.descripcion3, a.imagen3, a.direccion3, a.extra_link3,
-                                      a.desc_subtitulo4, a.etiqueta4, a.descripcion4, a.imagen4, a.direccion4, a.extra_link4,
-                                      a.desc_subtitulo5, a.etiqueta5, a.descripcion5, a.imagen5, a.direccion5, a.extra_link5,
-                                      a.desc_subtitulo6, a.etiqueta6, a.descripcion6, a.imagen6, a.direccion6, a.extra_link6,
-                                      a.desc_subtitulo7, a.etiqueta7, a.descripcion7, a.imagen7, a.direccion7, a.extra_link7,
-                                      a.desc_subtitulo8, a.etiqueta8, a.descripcion8, a.imagen8, a.direccion8, a.extra_link8,
-                                      a.desc_subtitulo9, a.etiqueta9, a.descripcion9, a.imagen9, a.direccion9, a.extra_link9,
-                                      a.desc_subtitulo10, a.etiqueta10, a.descripcion10, a.imagen10, a.direccion10, a.extra_link10,
+                                      a.desc_subtitulo1, a.etiqueta1, a.descripcion1, a.imagen1, a.maps1, a.direccion1, a.extra_link1,
+                                      a.desc_subtitulo2, a.etiqueta2, a.descripcion2, a.imagen2, a.maps2, a.direccion2, a.extra_link2,
+                                      a.desc_subtitulo3, a.etiqueta3, a.descripcion3, a.imagen3, a.maps3, a.direccion3, a.extra_link3,
+                                      a.desc_subtitulo4, a.etiqueta4, a.descripcion4, a.imagen4, a.maps4, a.direccion4, a.extra_link4,
+                                      a.desc_subtitulo5, a.etiqueta5, a.descripcion5, a.imagen5, a.maps5, a.direccion5, a.extra_link5,
+                                      a.desc_subtitulo6, a.etiqueta6, a.descripcion6, a.imagen6, a.maps6, a.direccion6, a.extra_link6,
+                                      a.desc_subtitulo7, a.etiqueta7, a.descripcion7, a.imagen7, a.maps7, a.direccion7, a.extra_link7,
+                                      a.desc_subtitulo8, a.etiqueta8, a.descripcion8, a.imagen8, a.maps8, a.direccion8, a.extra_link8,
+                                      a.desc_subtitulo9, a.etiqueta9, a.descripcion9, a.imagen9, a.maps9, a.direccion9, a.extra_link9,
+                                      a.desc_subtitulo10, a.etiqueta10, a.descripcion10, a.imagen10, a.maps10, a.direccion10, a.extra_link10,
                                       a.imagen
                     FROM articulos a INNER JOIN categorias c on a.id_categoria = c.id_categoria WHERE a.id_articulo = $id_articulo
                     ORDER BY a.id_articulo;";
@@ -140,9 +140,15 @@ require("session-check.php");
                           </div>
 
                           <div class="form-group col-md-12">
-                            <label class="text-primary font-weight-bold">Dirección 1</label>
-                            <textarea type="text" name="edit_direccion1" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps"><?php echo $row['direccion1'] ?></textarea>
+                            <label class="text-primary font-weight-bold">Dirección en Google Maps 1</label>
+                            <textarea type="text" name="edit_maps1" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps"><?php echo $row['maps1'] ?></textarea>
                             <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato es similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6</small>
+                          </div>
+
+                          <div class="form-group col-md-12">
+                            <label class="text-primary font-weight-bold">Dirección Escrita 1</label>
+                            <input type="text" name="edit_direccion1"class="form-control text-justify" placeholder="Dirección Escrita" value="<?php echo $row['direccion1'] ?>">
+                            <small class="form-text text-muted">Debe ingresar una dirección válida y no mucho texto</small>
                           </div>
 
                           <div class="form-group col-md-12">
@@ -179,9 +185,15 @@ require("session-check.php");
                           </div>
 
                           <div class="form-group col-md-12">
-                            <label class="text-primary font-weight-bold">Dirección 2</label>
-                            <textarea type="text" name="edit_direccion2" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps"><?php echo $row['direccion2'] ?></textarea>
+                            <label class="text-primary font-weight-bold">Dirección en Google Maps 2</label>
+                            <textarea type="text" name="edit_maps2" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps"><?php echo $row['maps2'] ?></textarea>
                             <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato es similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6</small>
+                          </div>
+
+                          <div class="form-group col-md-12">
+                            <label class="text-primary font-weight-bold">Dirección Escrita 2</label>
+                            <input type="text" name="edit_direccion2"class="form-control text-justify" placeholder="Dirección Escrita" value="<?php echo $row['direccion2'] ?>">
+                            <small class="form-text text-muted">Debe ingresar una dirección válida y no mucho texto</small>
                           </div>
 
                           <div class="form-group col-md-12">
@@ -218,9 +230,15 @@ require("session-check.php");
                           </div>
 
                           <div class="form-group col-md-12">
-                            <label class="text-primary font-weight-bold">Dirección 3</label>
-                            <textarea type="text" name="edit_direccion3" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps"><?php echo $row['direccion3'] ?></textarea>
+                            <label class="text-primary font-weight-bold">Dirección en Google Maps 3</label>
+                            <textarea type="text" name="edit_maps3" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps"><?php echo $row['maps3'] ?></textarea>
                             <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato es similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6</small>
+                          </div>
+
+                          <div class="form-group col-md-12">
+                            <label class="text-primary font-weight-bold">Dirección Escrita 3</label>
+                            <input type="text" name="edit_direccion3"class="form-control text-justify" placeholder="Dirección Escrita" value="<?php echo $row['direccion3'] ?>">
+                            <small class="form-text text-muted">Debe ingresar una dirección válida y no mucho texto</small>
                           </div>
 
                           <div class="form-group col-md-12">
@@ -257,9 +275,15 @@ require("session-check.php");
                           </div>
 
                           <div class="form-group col-md-12">
-                            <label class="text-primary font-weight-bold">Dirección 4</label>
-                            <textarea type="text" name="edit_direccion4" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps"><?php echo $row['direccion4'] ?></textarea>
+                            <label class="text-primary font-weight-bold">Dirección en Google Maps 4</label>
+                            <textarea type="text" name="edit_maps4" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps"><?php echo $row['maps4'] ?></textarea>
                             <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato es similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6</small>
+                          </div>
+
+                          <div class="form-group col-md-12">
+                            <label class="text-primary font-weight-bold">Dirección Escrita 4</label>
+                            <input type="text" name="edit_direccion4"class="form-control text-justify" placeholder="Dirección Escrita" value="<?php echo $row['direccion4'] ?>">
+                            <small class="form-text text-muted">Debe ingresar una dirección válida y no mucho texto</small>
                           </div>
 
                           <div class="form-group col-md-12">
@@ -296,9 +320,15 @@ require("session-check.php");
                           </div>
 
                           <div class="form-group col-md-12">
-                            <label class="text-primary font-weight-bold">Dirección 5</label>
-                            <textarea type="text" name="edit_direccion5" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps"><?php echo $row['direccion5'] ?></textarea>
+                            <label class="text-primary font-weight-bold">Dirección en Google Maps 5</label>
+                            <textarea type="text" name="edit_maps5" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps"><?php echo $row['maps5'] ?></textarea>
                             <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato es similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6</small>
+                          </div>
+
+                          <div class="form-group col-md-12">
+                            <label class="text-primary font-weight-bold">Dirección Escrita 5</label>
+                            <input type="text" name="edit_direccion5"class="form-control text-justify" placeholder="Dirección Escrita" value="<?php echo $row['direccion5'] ?>">
+                            <small class="form-text text-muted">Debe ingresar una dirección válida y no mucho texto</small>
                           </div>
 
                           <div class="form-group col-md-12">
@@ -335,9 +365,15 @@ require("session-check.php");
                           </div>
 
                           <div class="form-group col-md-12">
-                            <label class="text-primary font-weight-bold">Dirección 6</label>
-                            <textarea type="text" name="edit_direccion6" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps"><?php echo $row['direccion6'] ?></textarea>
+                            <label class="text-primary font-weight-bold">Dirección en Google Maps 6</label>
+                            <textarea type="text" name="edit_maps6" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps"><?php echo $row['maps6'] ?></textarea>
                             <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato es similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6</small>
+                          </div>
+
+                          <div class="form-group col-md-12">
+                            <label class="text-primary font-weight-bold">Dirección Escrita 6</label>
+                            <input type="text" name="edit_direccion6"class="form-control text-justify" placeholder="Dirección Escrita" value="<?php echo $row['direccion6'] ?>">
+                            <small class="form-text text-muted">Debe ingresar una dirección válida y no mucho texto</small>
                           </div>
 
                           <div class="form-group col-md-12">
@@ -374,9 +410,15 @@ require("session-check.php");
                           </div>
 
                           <div class="form-group col-md-12">
-                            <label class="text-primary font-weight-bold">Dirección 7</label>
-                            <textarea type="text" name="edit_direccion7" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps"><?php echo $row['direccion7'] ?></textarea>
+                            <label class="text-primary font-weight-bold">Dirección en Google Maps 7</label>
+                            <textarea type="text" name="edit_maps7" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps"><?php echo $row['maps7'] ?></textarea>
                             <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato es similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6</small>
+                          </div>
+
+                          <div class="form-group col-md-12">
+                            <label class="text-primary font-weight-bold">Dirección Escrita 7</label>
+                            <input type="text" name="edit_direccion7"class="form-control text-justify" placeholder="Dirección Escrita" value="<?php echo $row['direccion7'] ?>">
+                            <small class="form-text text-muted">Debe ingresar una dirección válida y no mucho texto</small>
                           </div>
 
                           <div class="form-group col-md-12">
@@ -413,9 +455,15 @@ require("session-check.php");
                           </div>
 
                           <div class="form-group col-md-12">
-                            <label class="text-primary font-weight-bold">Dirección 8</label>
-                            <textarea type="text" name="edit_direccion8" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps"><?php echo $row['direccion8'] ?></textarea>
+                            <label class="text-primary font-weight-bold">Dirección en Google Maps 8</label>
+                            <textarea type="text" name="edit_maps8" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps"><?php echo $row['maps8'] ?></textarea>
                             <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato es similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6</small>
+                          </div>
+
+                          <div class="form-group col-md-12">
+                            <label class="text-primary font-weight-bold">Dirección Escrita 8</label>
+                            <input type="text" name="edit_direccion8"class="form-control text-justify" placeholder="Dirección Escrita" value="<?php echo $row['direccion8'] ?>">
+                            <small class="form-text text-muted">Debe ingresar una dirección válida y no mucho texto</small>
                           </div>
 
                           <div class="form-group col-md-12">
@@ -452,9 +500,15 @@ require("session-check.php");
                           </div>
 
                           <div class="form-group col-md-12">
-                            <label class="text-primary font-weight-bold">Dirección 9</label>
-                            <textarea type="text" name="edit_direccion9" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps"><?php echo $row['direccion9'] ?></textarea>
+                            <label class="text-primary font-weight-bold">Dirección en Google Maps 9</label>
+                            <textarea type="text" name="edit_maps9" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps"><?php echo $row['maps9'] ?></textarea>
                             <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato es similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6</small>
+                          </div>
+
+                          <div class="form-group col-md-12">
+                            <label class="text-primary font-weight-bold">Dirección Escrita 9</label>
+                            <input type="text" name="edit_direccion9"class="form-control text-justify" placeholder="Dirección Escrita" value="<?php echo $row['direccion9'] ?>">
+                            <small class="form-text text-muted">Debe ingresar una dirección válida y no mucho texto</small>
                           </div>
 
                           <div class="form-group col-md-12">
@@ -491,9 +545,15 @@ require("session-check.php");
                           </div>
 
                           <div class="form-group col-md-12">
-                            <label class="text-primary font-weight-bold">Dirección 10</label>
-                            <textarea type="text" name="edit_direccion10" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps"><?php echo $row['direccion10'] ?></textarea>
+                            <label class="text-primary font-weight-bold">Dirección en Google Maps 10</label>
+                            <textarea type="text" name="edit_maps10" rows="3" class="form-control text-justify" placeholder="Dirección en Google Maps"><?php echo $row['maps10'] ?></textarea>
                             <small class="form-text text-muted">Debe ingresar una dirección copiada directamente de Google Maps, de lo contrario no se desplegará correctamente en la página para el usuario. El formato es similar a este: https://goo.gl/maps/tJDiJ9M2pbcmdGeG6</small>
+                          </div>
+
+                          <div class="form-group col-md-12">
+                            <label class="text-primary font-weight-bold">Dirección Escrita 10</label>
+                            <input type="text" name="edit_direccion10"class="form-control text-justify" placeholder="Dirección Escrita" value="<?php echo $row['direccion10'] ?>">
+                            <small class="form-text text-muted">Debe ingresar una dirección válida y no mucho texto</small>
                           </div>
 
                           <div class="form-group col-md-12">
