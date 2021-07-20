@@ -108,6 +108,7 @@ if(isset($_POST['btnAgregarArticulo'])){
                     INTO
                         articulos
                             (id_categoria, nombre_articulo, titulo,
+<<<<<<< HEAD
                               desc_subtitulo1, etiqueta1, descripcion1, imagen1, maps1, direccion1, extra_link1,
                               desc_subtitulo2, etiqueta2, descripcion2, imagen2, maps2, direccion2, extra_link2,
                               desc_subtitulo3, etiqueta3, descripcion3, imagen3, maps3, direccion3, extra_link3,
@@ -131,6 +132,31 @@ if(isset($_POST['btnAgregarArticulo'])){
                           '$subtitulo8', '$etiqueta8', '$descripcion8', '$imagen8', '$maps8', '$direccion8', '$extralink8',
                           '$subtitulo9', '$etiqueta9', '$descripcion9', '$imagen9', '$maps9', '$direccion9', '$extralink9',
                           '$subtitulo10', '$etiqueta10', '$descripcion10', '$imagen10', '$maps10', '$direccion10', '$extralink10',
+=======
+                              desc_subtitulo1, etiqueta1, descripcion1, imagen1, direccion1, extra_link1,
+                              desc_subtitulo2, etiqueta2, descripcion2, imagen2, direccion2, extra_link2,
+                              desc_subtitulo3, etiqueta3, descripcion3, imagen3, direccion3, extra_link3,
+                              desc_subtitulo4, etiqueta4, descripcion4, imagen4, direccion4, extra_link4,
+                              desc_subtitulo5, etiqueta5, descripcion5, imagen5, direccion5, extra_link5,
+                              desc_subtitulo6, etiqueta6, descripcion6, imagen6, direccion6, extra_link6,
+                              desc_subtitulo7, etiqueta7, descripcion7, imagen7, direccion7, extra_link7,
+                              desc_subtitulo8, etiqueta8, descripcion8, imagen8, direccion8, extra_link8,
+                              desc_subtitulo9, etiqueta9, descripcion9, imagen9, direccion9, extra_link9,
+                              desc_subtitulo10, etiqueta10, descripcion10, imagen10, direccion10, extra_link10,
+                              imagen)
+                    VALUES
+                        ('$id_categoria', '$nombre_articulo', '$titulo',
+                          '$subtitulo1', '$etiqueta1', '$descripcion1', '$imagen1', '$direccion1', '$extralink1',
+                          '$subtitulo2', '$etiqueta2', '$descripcion2', '$imagen2', '$direccion2', '$extralink2',
+                          '$subtitulo3', '$etiqueta3', '$descripcion3', '$imagen3', '$direccion3', '$extralink3',
+                          '$subtitulo4', '$etiqueta4', '$descripcion4', '$imagen4', '$direccion4', '$extralink4',
+                          '$subtitulo5', '$etiqueta5', '$descripcion5', '$imagen5', '$direccion5', '$extralink5',
+                          '$subtitulo6', '$etiqueta6', '$descripcion6', '$imagen6', '$direccion6', '$extralink6',
+                          '$subtitulo7', '$etiqueta7', '$descripcion7', '$imagen7', '$direccion7', '$extralink7',
+                          '$subtitulo8', '$etiqueta8', '$descripcion8', '$imagen8', '$direccion8', '$extralink8',
+                          '$subtitulo9', '$etiqueta9', '$descripcion9', '$imagen9', '$direccion9', '$extralink9',
+                          '$subtitulo10', '$etiqueta10', '$descripcion10', '$imagen10', '$direccion10', '$extralink10',
+>>>>>>> c89ed682ecc3a97e4cab4d46d4e1dd01a5158b24
                           '$destinobd')";
 
             $query_run = mysqli_query($conexion, $query);
@@ -173,8 +199,11 @@ if(isset($_POST['updateArticulobtn'])){
     $edit_etiqueta2 = $_POST['edit_etiqueta2'];
     $edit_descripcion2 = $_POST['edit_descripcion2'];
     $edit_imagen2 = $_POST['edit_imagen2'];
+<<<<<<< HEAD
     $edit_maps2 = $_POST['edit_maps2'];
     $edit_direccion2 = $_POST['edit_direccion2'];
+=======
+>>>>>>> c89ed682ecc3a97e4cab4d46d4e1dd01a5158b24
     $edit_extralink2 = $_POST['edit_extralink2'];
 
     $edit_subtitulo3 = $_POST['edit_subtitulo3'];
@@ -260,6 +289,7 @@ if(isset($_POST['updateArticulobtn'])){
 
         if(move_uploaded_file($archivo_edit,$destino_edit)){
             $query = "UPDATE articulos SET id_categoria='$edit_categoria', nombre_articulo= '$edit_nombre', titulo='$edit_titulo' ,
+<<<<<<< HEAD
             desc_subtitulo1 ='$edit_subtitulo1', etiqueta1 ='$edit_etiqueta1', descripcion1 ='$edit_descripcion1', imagen1 = '$edit_imagen1', maps1 = '$edit_maps1', direccion1 = '$edit_direccion1', extra_link1 = '$edit_extralink1',
             desc_subtitulo2 ='$edit_subtitulo2', etiqueta2 ='$edit_etiqueta2', descripcion2 ='$edit_descripcion2', imagen2 = '$edit_imagen2', maps2 = '$edit_maps2', direccion2 = '$edit_direccion2', extra_link2 = '$edit_extralink2',
             desc_subtitulo3 ='$edit_subtitulo3', etiqueta3 ='$edit_etiqueta3', descripcion3 ='$edit_descripcion3', imagen3 = '$edit_imagen3', maps3 = '$edit_maps3', direccion3 = '$edit_direccion3', extra_link3 = '$edit_extralink3',
@@ -270,6 +300,18 @@ if(isset($_POST['updateArticulobtn'])){
             desc_subtitulo8 ='$edit_subtitulo8', etiqueta8 ='$edit_etiqueta8', descripcion8 ='$edit_descripcion8', imagen8 = '$edit_imagen8', maps8 = '$edit_maps8', direccion8 = '$edit_direccion8', extra_link8 = '$edit_extralink8',
             desc_subtitulo9 ='$edit_subtitulo9', etiqueta9 ='$edit_etiqueta9', descripcion9 ='$edit_descripcion9', imagen9 = '$edit_imagen9', maps9 = '$edit_maps9', direccion9 = '$edit_direccion9', extra_link9 = '$edit_extralink9',
             desc_subtitulo10 ='$edit_subtitulo10', etiqueta10 ='$edit_etiqueta10', descripcion10 ='$edit_descripcion10', imagen10 = '$edit_imagen10', maps10 = '$edit_maps10', direccion10 = '$edit_direccion10', extra_link10 = '$edit_extralink10',
+=======
+            desc_subtitulo1 ='$edit_subtitulo1', etiqueta1 ='$edit_etiqueta1', descripcion1 ='$edit_descripcion1', imagen1 = '$edit_imagen1', direccion1 = '$edit_direccion1', extra_link1 = '$edit_extralink1',
+            desc_subtitulo2 ='$edit_subtitulo2', etiqueta2 ='$edit_etiqueta2', descripcion2 ='$edit_descripcion2', imagen2 = '$edit_imagen2', direccion2 = '$edit_direccion2', extra_link2 = '$edit_extralink2',
+            desc_subtitulo3 ='$edit_subtitulo3', etiqueta3 ='$edit_etiqueta3', descripcion3 ='$edit_descripcion3', imagen3 = '$edit_imagen3', direccion3 = '$edit_direccion3', extra_link3 = '$edit_extralink3',
+            desc_subtitulo4 ='$edit_subtitulo4', etiqueta4 ='$edit_etiqueta4', descripcion4 ='$edit_descripcion4', imagen4 = '$edit_imagen4', direccion4 = '$edit_direccion4', extra_link4 = '$edit_extralink4',
+            desc_subtitulo5 ='$edit_subtitulo5', etiqueta5 ='$edit_etiqueta5', descripcion5 ='$edit_descripcion5', imagen5 = '$edit_imagen5', direccion5 = '$edit_direccion5', extra_link5 = '$edit_extralink5',
+            desc_subtitulo6 ='$edit_subtitulo6', etiqueta6 ='$edit_etiqueta6', descripcion6 ='$edit_descripcion6', imagen6 = '$edit_imagen6', direccion6 = '$edit_direccion6', extra_link6 = '$edit_extralink6',
+            desc_subtitulo7 ='$edit_subtitulo7', etiqueta7 ='$edit_etiqueta7', descripcion7 ='$edit_descripcion7', imagen7 = '$edit_imagen7', direccion7 = '$edit_direccion7', extra_link7 = '$edit_extralink7',
+            desc_subtitulo8 ='$edit_subtitulo8', etiqueta8 ='$edit_etiqueta8', descripcion8 ='$edit_descripcion8', imagen8 = '$edit_imagen8', direccion8 = '$edit_direccion8', extra_link8 = '$edit_extralink8',
+            desc_subtitulo9 ='$edit_subtitulo9', etiqueta9 ='$edit_etiqueta9', descripcion9 ='$edit_descripcion9', imagen9 = '$edit_imagen9', direccion9 = '$edit_direccion9', extra_link9 = '$edit_extralink9',
+            desc_subtitulo10 ='$edit_subtitulo10', etiqueta10 ='$edit_etiqueta10', descripcion10 ='$edit_descripcion10', imagen10 = '$edit_imagen10', direccion10 = '$edit_direccion10', extra_link10 = '$edit_extralink10',
+>>>>>>> c89ed682ecc3a97e4cab4d46d4e1dd01a5158b24
             imagen='$destino_edit_bd' WHERE id_articulo ='$id_articulo'";
 
             $query_run = mysqli_query($conexion, $query);
