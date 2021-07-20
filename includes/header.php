@@ -24,6 +24,15 @@ require("connect.php");
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="js/JQuery3.3.1.js" charset="utf-8"></script>
   <script src="js/lightslider.js" charset="utf-8"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-202757131-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-202757131-1');
+</script>
 </head>
 
 <body>
